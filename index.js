@@ -6,8 +6,8 @@ app.set('port', (process.env.PORT || 8100));
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
-    response.send("Welcome to the Music MMO!\n");
-    response.send("(C) Northwestern University. Fahad, Mark, and Scott.\N");
+    response.send("Welcome to the Music MMO! ");
+    response.send("(C) Northwestern University. Fahad, Mark, and Scott.");
 });
 
 app.listen(app.get('port'), function() {
