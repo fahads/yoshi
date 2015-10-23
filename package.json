@@ -1,27 +1,33 @@
 {
   "name": "cis-395-music-mmo",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A musical MMO game",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "soundfont-player": "0.4.0",
+    "body-parser": "^1.14.1",
     "ejs": "2.3.3",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "mongoose": "^4.2.2",
+    "node-restful": "^0.2.2",
+    "soundfont-player": "0.4.0"
   },
   "engines": {
     "node": "0.12.7"
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/scott7m/cis-395-music-mmo"
+    "url": "git+https://bitbucket.org/scott7m/cis-395-music-mmo.git"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-  "license": "NU"
+  "license": "OpenSSL",
+  "homepage": "https://bitbucket.org/scott7m/cis-395-music-mmo#readme",
+  "devDependencies": {},
+  "author": "Fahad, Mark, and Scott"
 }
