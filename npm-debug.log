@@ -1,0 +1,1279 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/package.json
+6 verbose install where, deps [ '/home/scottm/git/yoshi',
+6 verbose install   [ 'body-parser',
+6 verbose install     'ejs',
+6 verbose install     'express',
+6 verbose install     'mongoose',
+6 verbose install     'mongoose-crate',
+6 verbose install     'node-restful',
+6 verbose install     'soundfont-player' ] ]
+7 verbose install where, peers [ '/home/scottm/git/yoshi', [] ]
+8 verbose installManyTop reading for lifecycle /home/scottm/git/yoshi/package.json
+9 info preinstall cis-395-music-mmo@1.0.0
+10 verbose installManyTop reading scoped package data from /home/scottm/git/yoshi/node_modules/body-parser/package.json
+11 verbose installManyTop reading scoped package data from /home/scottm/git/yoshi/node_modules/ejs/package.json
+12 verbose installManyTop reading scoped package data from /home/scottm/git/yoshi/node_modules/express/package.json
+13 verbose installManyTop reading scoped package data from /home/scottm/git/yoshi/node_modules/mongoose/package.json
+14 verbose installManyTop reading scoped package data from /home/scottm/git/yoshi/node_modules/node-restful/package.json
+15 verbose installManyTop reading scoped package data from /home/scottm/git/yoshi/node_modules/npm-debug.log/package.json
+16 verbose installManyTop reading scoped package data from /home/scottm/git/yoshi/node_modules/soundfont-player/package.json
+17 info package.json node-restful@0.2.2 No license field.
+18 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/package.json
+19 verbose targetResolver reading package data from /home/scottm/git/yoshi/node_modules/body-parser/package.json
+20 verbose targetResolver reading package data from /home/scottm/git/yoshi/node_modules/ejs/package.json
+21 verbose targetResolver reading package data from /home/scottm/git/yoshi/node_modules/express/package.json
+22 verbose targetResolver reading package data from /home/scottm/git/yoshi/node_modules/mongoose/package.json
+23 verbose targetResolver reading package data from /home/scottm/git/yoshi/node_modules/node-restful/package.json
+24 verbose targetResolver reading package data from /home/scottm/git/yoshi/node_modules/npm-debug.log/package.json
+25 verbose targetResolver reading package data from /home/scottm/git/yoshi/node_modules/soundfont-player/package.json
+26 verbose already installed skipping express@4.13.3 /home/scottm/git/yoshi
+27 verbose already installed skipping mongoose@^4.2.2 /home/scottm/git/yoshi
+28 silly cache add args [ 'mongoose-crate@^1.0.10', null ]
+29 verbose cache add spec mongoose-crate@^1.0.10
+30 silly cache add parsed spec { raw: 'mongoose-crate@^1.0.10',
+30 silly cache add   scope: null,
+30 silly cache add   name: 'mongoose-crate',
+30 silly cache add   rawSpec: '^1.0.10',
+30 silly cache add   spec: '>=1.0.10 <2.0.0',
+30 silly cache add   type: 'range' }
+31 silly addNamed mongoose-crate@>=1.0.10 <2.0.0
+32 verbose addNamed ">=1.0.10 <2.0.0" is a valid semver range for mongoose-crate
+33 silly addNameRange { name: 'mongoose-crate',
+33 silly addNameRange   range: '>=1.0.10 <2.0.0',
+33 silly addNameRange   hasData: false }
+34 silly mapToRegistry name mongoose-crate
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry uri https://registry.npmjs.org/mongoose-crate
+38 verbose addNameRange registry:https://registry.npmjs.org/mongoose-crate not in flight; fetching
+39 verbose already installed skipping node-restful@^0.2.2 /home/scottm/git/yoshi
+40 verbose already installed skipping soundfont-player@0.4.0 /home/scottm/git/yoshi
+41 verbose request uri https://registry.npmjs.org/mongoose-crate
+42 verbose request no auth needed
+43 info attempt registry request try #1 at 12:07:01
+44 verbose request id 095933e152cb281c
+45 verbose etag "CQCT86F8CUD7BKMXCBCH1YA2B"
+46 http request GET https://registry.npmjs.org/mongoose-crate
+47 verbose already installed skipping body-parser@^1.14.1 /home/scottm/git/yoshi
+48 verbose already installed skipping ejs@2.3.3 /home/scottm/git/yoshi
+49 http 304 https://registry.npmjs.org/mongoose-crate
+50 silly get cb [ 304,
+50 silly get   { date: 'Sun, 25 Oct 2015 17:07:01 GMT',
+50 silly get     via: '1.1 varnish',
+50 silly get     'cache-control': 'max-age=60',
+50 silly get     etag: '"CQCT86F8CUD7BKMXCBCH1YA2B"',
+50 silly get     age: '0',
+50 silly get     connection: 'keep-alive',
+50 silly get     'x-served-by': 'cache-dfw1835-DFW',
+50 silly get     'x-cache': 'MISS',
+50 silly get     'x-cache-hits': '0',
+50 silly get     'x-timer': 'S1445792821.767594,VS0,VE143',
+50 silly get     vary: 'Accept' } ]
+51 verbose etag https://registry.npmjs.org/mongoose-crate from cache
+52 verbose get saving mongoose-crate to /home/scottm/.npm/registry.npmjs.org/mongoose-crate/.cache.json
+53 silly addNameRange number 2 { name: 'mongoose-crate',
+53 silly addNameRange   range: '>=1.0.10 <2.0.0',
+53 silly addNameRange   hasData: true }
+54 silly addNameRange versions [ 'mongoose-crate',
+54 silly addNameRange   [ '1.0.0',
+54 silly addNameRange     '1.0.1',
+54 silly addNameRange     '1.0.2',
+54 silly addNameRange     '1.0.3',
+54 silly addNameRange     '1.0.4',
+54 silly addNameRange     '1.0.5',
+54 silly addNameRange     '1.0.6',
+54 silly addNameRange     '1.0.7',
+54 silly addNameRange     '1.0.8',
+54 silly addNameRange     '1.0.9',
+54 silly addNameRange     '1.0.10' ] ]
+55 silly addNamed mongoose-crate@1.0.10
+56 verbose addNamed "1.0.10" is a plain semver version for mongoose-crate
+57 silly cache afterAdd mongoose-crate@1.0.10
+58 verbose afterAdd /home/scottm/.npm/mongoose-crate/1.0.10/package/package.json not in flight; writing
+59 verbose afterAdd /home/scottm/.npm/mongoose-crate/1.0.10/package/package.json written
+60 silly install resolved [ { author: { name: 'Alex Potsides' },
+60 silly install resolved     name: 'mongoose-crate',
+60 silly install resolved     description: 'Attach files to MongoDB models via Mongoose.js',
+60 silly install resolved     keywords:
+60 silly install resolved      [ 'mongoose',
+60 silly install resolved        's3',
+60 silly install resolved        'imagemagick',
+60 silly install resolved        'uploads',
+60 silly install resolved        'attachments',
+60 silly install resolved        'files' ],
+60 silly install resolved     version: '1.0.10',
+60 silly install resolved     homepage: 'https://github.com/achingbrain/mongoose-crate',
+60 silly install resolved     repository:
+60 silly install resolved      { type: 'git',
+60 silly install resolved        url: 'git://github.com/achingbrain/mongoose-crate.git' },
+60 silly install resolved     main: 'index.js',
+60 silly install resolved     scripts:
+60 silly install resolved      { test: 'istanbul cover ./node_modules/mocha/bin/_mocha',
+60 silly install resolved        coveralls: 'istanbul cover _mocha && cat ./coverage/lcov.info | coveralls' },
+60 silly install resolved     dependencies: { async: '^0.9', 'check-types': '^2.2', mmmagic: '^0.3' },
+60 silly install resolved     devDependencies:
+60 silly install resolved      { coveralls: '^2.8',
+60 silly install resolved        istanbul: '^0.3',
+60 silly install resolved        mocha: '^2.1',
+60 silly install resolved        mongoose: '^3.8',
+60 silly install resolved        'pre-commit': '^0.0',
+60 silly install resolved        should: '^4.0',
+60 silly install resolved        sinon: '^1.9',
+60 silly install resolved        tingodb: '^0.3',
+60 silly install resolved        tungus: '^0.0' },
+60 silly install resolved     gitHead: '906ea9cb29f90f4da8e92bbb8c9c7e3726488303',
+60 silly install resolved     bugs: { url: 'https://github.com/achingbrain/mongoose-crate/issues' },
+60 silly install resolved     _id: 'mongoose-crate@1.0.10',
+60 silly install resolved     _shasum: 'd29ccf7f7f0c6cc8517952cda6d88dc2083be3c6',
+60 silly install resolved     _from: 'mongoose-crate@>=1.0.10 <2.0.0',
+60 silly install resolved     _npmVersion: '1.4.28',
+60 silly install resolved     _npmUser: { name: 'achingbrain', email: 'alex@achingbrain.net' },
+60 silly install resolved     maintainers: [ [Object] ],
+60 silly install resolved     dist:
+60 silly install resolved      { shasum: 'd29ccf7f7f0c6cc8517952cda6d88dc2083be3c6',
+60 silly install resolved        tarball: 'http://registry.npmjs.org/mongoose-crate/-/mongoose-crate-1.0.10.tgz' },
+60 silly install resolved     directories: {},
+60 silly install resolved     _resolved: 'https://registry.npmjs.org/mongoose-crate/-/mongoose-crate-1.0.10.tgz',
+60 silly install resolved     readme: 'ERROR: No README data found!' } ]
+61 info install mongoose-crate@1.0.10 into /home/scottm/git/yoshi
+62 info installOne mongoose-crate@1.0.10
+63 verbose installOne of mongoose-crate to /home/scottm/git/yoshi not in flight; installing
+64 verbose lock using /home/scottm/.npm/_locks/mongoose-crate-023ca7e1e7558b29.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate
+65 silly install write writing mongoose-crate 1.0.10 to /home/scottm/git/yoshi/node_modules/mongoose-crate
+66 verbose unbuild node_modules/mongoose-crate
+67 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate is being purged from base /home/scottm/git/yoshi
+68 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate
+69 verbose tar unpack /home/scottm/.npm/mongoose-crate/1.0.10/package.tgz
+70 verbose tar unpacking to /home/scottm/git/yoshi/node_modules/mongoose-crate
+71 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate is being purged
+72 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate
+73 silly gunzTarPerm modes [ '755', '644' ]
+74 silly gunzTarPerm extractEntry package.json
+75 silly gunzTarPerm extractEntry .npmignore
+76 silly gunzTarPerm extractEntry README.md
+77 silly gunzTarPerm extractEntry index.js
+78 silly gunzTarPerm extractEntry .travis.yml
+79 silly gunzTarPerm extractEntry assets/crate.pxm
+80 silly gunzTarPerm extractEntry lib/Crate.js
+81 silly gunzTarPerm extractEntry lib/FileProcessor.js
+82 silly gunzTarPerm extractEntry lib/StorageProvider.js
+83 silly gunzTarPerm extractEntry test/CrateTest.js
+84 silly gunzTarPerm extractEntry test/fixtures/StubFileProcessor.js
+85 silly gunzTarPerm extractEntry test/fixtures/StubSchema.js
+86 silly gunzTarPerm extractEntry test/fixtures/StubSchemaWithArrayProperty.js
+87 silly gunzTarPerm extractEntry test/fixtures/StubSchemaWithFileProcessor.js
+88 silly gunzTarPerm extractEntry test/fixtures/StubSchemaWithUnselectedName.js
+89 silly gunzTarPerm extractEntry test/fixtures/StubStorageProvider.js
+90 silly gunzTarPerm extractEntry test/fixtures/randomString.js
+91 silly gunzTarPerm extractEntry test/fixtures/node_js_logo.png
+92 verbose write writing to /home/scottm/git/yoshi/node_modules/mongoose-crate/package.json
+93 info preinstall mongoose-crate@1.0.10
+94 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/package.json
+95 silly prepareForInstallMany adding async@^0.9 from mongoose-crate dependencies
+96 silly prepareForInstallMany adding check-types@^2.2 from mongoose-crate dependencies
+97 silly prepareForInstallMany adding mmmagic@^0.3 from mongoose-crate dependencies
+98 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/package.json
+99 silly cache add args [ 'async@^0.9', null ]
+100 verbose cache add spec async@^0.9
+101 silly cache add args [ 'check-types@^2.2', null ]
+102 verbose cache add spec check-types@^2.2
+103 silly cache add parsed spec { raw: 'async@^0.9',
+103 silly cache add   scope: null,
+103 silly cache add   name: 'async',
+103 silly cache add   rawSpec: '^0.9',
+103 silly cache add   spec: '>=0.9.0 <0.10.0',
+103 silly cache add   type: 'range' }
+104 silly addNamed async@>=0.9.0 <0.10.0
+105 verbose addNamed ">=0.9.0 <0.10.0" is a valid semver range for async
+106 silly addNameRange { name: 'async', range: '>=0.9.0 <0.10.0', hasData: false }
+107 silly mapToRegistry name async
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry uri https://registry.npmjs.org/async
+111 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+112 silly cache add parsed spec { raw: 'check-types@^2.2',
+112 silly cache add   scope: null,
+112 silly cache add   name: 'check-types',
+112 silly cache add   rawSpec: '^2.2',
+112 silly cache add   spec: '>=2.2.0 <3.0.0',
+112 silly cache add   type: 'range' }
+113 silly addNamed check-types@>=2.2.0 <3.0.0
+114 verbose addNamed ">=2.2.0 <3.0.0" is a valid semver range for check-types
+115 silly addNameRange { name: 'check-types', range: '>=2.2.0 <3.0.0', hasData: false }
+116 silly mapToRegistry name check-types
+117 silly mapToRegistry using default registry
+118 silly mapToRegistry registry https://registry.npmjs.org/
+119 silly mapToRegistry uri https://registry.npmjs.org/check-types
+120 verbose addNameRange registry:https://registry.npmjs.org/check-types not in flight; fetching
+121 silly cache add args [ 'mmmagic@^0.3', null ]
+122 verbose cache add spec mmmagic@^0.3
+123 silly cache add parsed spec { raw: 'mmmagic@^0.3',
+123 silly cache add   scope: null,
+123 silly cache add   name: 'mmmagic',
+123 silly cache add   rawSpec: '^0.3',
+123 silly cache add   spec: '>=0.3.0 <0.4.0',
+123 silly cache add   type: 'range' }
+124 silly addNamed mmmagic@>=0.3.0 <0.4.0
+125 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for mmmagic
+126 silly addNameRange { name: 'mmmagic', range: '>=0.3.0 <0.4.0', hasData: false }
+127 silly mapToRegistry name mmmagic
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry uri https://registry.npmjs.org/mmmagic
+131 verbose addNameRange registry:https://registry.npmjs.org/mmmagic not in flight; fetching
+132 verbose request uri https://registry.npmjs.org/mmmagic
+133 verbose request no auth needed
+134 info attempt registry request try #1 at 12:07:01
+135 verbose etag "D86MWZD6I4TF6BKMA6I88NJSY"
+136 http request GET https://registry.npmjs.org/mmmagic
+137 verbose request uri https://registry.npmjs.org/check-types
+138 verbose request no auth needed
+139 info attempt registry request try #1 at 12:07:01
+140 verbose etag "2UEMO5JUDNWASVT9V5WFW6YCQ"
+141 http request GET https://registry.npmjs.org/check-types
+142 verbose request uri https://registry.npmjs.org/async
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 12:07:01
+145 verbose etag "CPOQ922KCSJWT10JBCILDDJQH"
+146 http request GET https://registry.npmjs.org/async
+147 http 304 https://registry.npmjs.org/async
+148 silly get cb [ 304,
+148 silly get   { date: 'Sun, 25 Oct 2015 17:07:02 GMT',
+148 silly get     via: '1.1 varnish',
+148 silly get     'cache-control': 'max-age=60',
+148 silly get     etag: '"CPOQ922KCSJWT10JBCILDDJQH"',
+148 silly get     age: '49',
+148 silly get     connection: 'keep-alive',
+148 silly get     'x-served-by': 'cache-dfw1823-DFW',
+148 silly get     'x-cache': 'HIT',
+148 silly get     'x-cache-hits': '1',
+148 silly get     'x-timer': 'S1445792822.169489,VS0,VE0',
+148 silly get     vary: 'Accept' } ]
+149 verbose etag https://registry.npmjs.org/async from cache
+150 verbose get saving async to /home/scottm/.npm/registry.npmjs.org/async/.cache.json
+151 silly addNameRange number 2 { name: 'async', range: '>=0.9.0 <0.10.0', hasData: true }
+152 silly addNameRange versions [ 'async',
+152 silly addNameRange   [ '0.1.0',
+152 silly addNameRange     '0.1.1',
+152 silly addNameRange     '0.1.2',
+152 silly addNameRange     '0.1.3',
+152 silly addNameRange     '0.1.4',
+152 silly addNameRange     '0.1.5',
+152 silly addNameRange     '0.1.6',
+152 silly addNameRange     '0.1.7',
+152 silly addNameRange     '0.1.8',
+152 silly addNameRange     '0.1.9',
+152 silly addNameRange     '0.1.10',
+152 silly addNameRange     '0.1.11',
+152 silly addNameRange     '0.1.12',
+152 silly addNameRange     '0.1.13',
+152 silly addNameRange     '0.1.14',
+152 silly addNameRange     '0.1.15',
+152 silly addNameRange     '0.1.16',
+152 silly addNameRange     '0.1.17',
+152 silly addNameRange     '0.1.18',
+152 silly addNameRange     '0.1.19',
+152 silly addNameRange     '0.1.20',
+152 silly addNameRange     '0.1.21',
+152 silly addNameRange     '0.1.22',
+152 silly addNameRange     '0.2.0',
+152 silly addNameRange     '0.2.1',
+152 silly addNameRange     '0.2.2',
+152 silly addNameRange     '0.2.3',
+152 silly addNameRange     '0.2.4',
+152 silly addNameRange     '0.2.5',
+152 silly addNameRange     '0.2.6',
+152 silly addNameRange     '0.2.7',
+152 silly addNameRange     '0.2.8',
+152 silly addNameRange     '0.2.9',
+152 silly addNameRange     '0.2.10',
+152 silly addNameRange     '0.3.0',
+152 silly addNameRange     '0.4.0',
+152 silly addNameRange     '0.4.1',
+152 silly addNameRange     '0.5.0',
+152 silly addNameRange     '0.6.0',
+152 silly addNameRange     '0.6.1',
+152 silly addNameRange     '0.6.2',
+152 silly addNameRange     '0.7.0',
+152 silly addNameRange     '0.8.0',
+152 silly addNameRange     '0.9.0',
+152 silly addNameRange     '0.9.2',
+152 silly addNameRange     '1.0.0',
+152 silly addNameRange     '1.1.0',
+152 silly addNameRange     '1.2.0',
+152 silly addNameRange     '1.1.1',
+152 silly addNameRange     '1.2.1',
+152 silly addNameRange     '1.3.0',
+152 silly addNameRange     '1.4.0',
+152 silly addNameRange     '1.4.1',
+152 silly addNameRange     '1.4.2' ] ]
+153 silly addNamed async@0.9.2
+154 verbose addNamed "0.9.2" is a plain semver version for async
+155 silly cache afterAdd async@0.9.2
+156 verbose afterAdd /home/scottm/.npm/async/0.9.2/package/package.json not in flight; writing
+157 verbose afterAdd /home/scottm/.npm/async/0.9.2/package/package.json written
+158 http 304 https://registry.npmjs.org/check-types
+159 silly get cb [ 304,
+159 silly get   { date: 'Sun, 25 Oct 2015 17:07:02 GMT',
+159 silly get     via: '1.1 varnish',
+159 silly get     'cache-control': 'max-age=60',
+159 silly get     etag: '"2UEMO5JUDNWASVT9V5WFW6YCQ"',
+159 silly get     age: '0',
+159 silly get     connection: 'keep-alive',
+159 silly get     'x-served-by': 'cache-dfw1832-DFW',
+159 silly get     'x-cache': 'MISS',
+159 silly get     'x-cache-hits': '0',
+159 silly get     'x-timer': 'S1445792822.181113,VS0,VE88',
+159 silly get     vary: 'Accept' } ]
+160 verbose etag https://registry.npmjs.org/check-types from cache
+161 verbose get saving check-types to /home/scottm/.npm/registry.npmjs.org/check-types/.cache.json
+162 silly addNameRange number 2 { name: 'check-types', range: '>=2.2.0 <3.0.0', hasData: true }
+163 silly addNameRange versions [ 'check-types',
+163 silly addNameRange   [ '0.1.0',
+163 silly addNameRange     '0.1.1',
+163 silly addNameRange     '0.1.2',
+163 silly addNameRange     '0.1.3',
+163 silly addNameRange     '0.1.4',
+163 silly addNameRange     '0.1.5',
+163 silly addNameRange     '0.1.6',
+163 silly addNameRange     '0.2.0',
+163 silly addNameRange     '0.2.1',
+163 silly addNameRange     '0.2.2',
+163 silly addNameRange     '0.2.3',
+163 silly addNameRange     '0.2.5',
+163 silly addNameRange     '0.3.0',
+163 silly addNameRange     '0.3.1',
+163 silly addNameRange     '0.4.0',
+163 silly addNameRange     '0.4.1',
+163 silly addNameRange     '0.4.2',
+163 silly addNameRange     '0.4.3',
+163 silly addNameRange     '0.5.0',
+163 silly addNameRange     '0.5.1',
+163 silly addNameRange     '0.5.2',
+163 silly addNameRange     '0.5.4',
+163 silly addNameRange     '0.6.0',
+163 silly addNameRange     '0.6.1',
+163 silly addNameRange     '0.6.2',
+163 silly addNameRange     '0.6.3',
+163 silly addNameRange     '0.6.4',
+163 silly addNameRange     '0.6.5',
+163 silly addNameRange     '0.7.0',
+163 silly addNameRange     '0.7.1',
+163 silly addNameRange     '0.7.2',
+163 silly addNameRange     '0.8.0',
+163 silly addNameRange     '0.8.1',
+163 silly addNameRange     '1.0.0',
+163 silly addNameRange     '1.1.0',
+163 silly addNameRange     '1.1.1',
+163 silly addNameRange     '1.2.0',
+163 silly addNameRange     '1.2.1',
+163 silly addNameRange     '1.3.0',
+163 silly addNameRange     '1.3.1',
+163 silly addNameRange     '1.3.2',
+163 silly addNameRange     '1.4.0',
+163 silly addNameRange     '2.0.0',
+163 silly addNameRange     '2.0.1',
+163 silly addNameRange     '2.1.0',
+163 silly addNameRange     '2.1.1',
+163 silly addNameRange     '2.2.0',
+163 silly addNameRange     '3.0.0',
+163 silly addNameRange     '3.1.0',
+163 silly addNameRange     '3.1.1',
+163 silly addNameRange     '3.2.0',
+163 silly addNameRange     '3.3.0',
+163 silly addNameRange     '3.3.1',
+163 silly addNameRange     '4.0.0',
+163 silly addNameRange     '4.1.0',
+163 silly addNameRange     '4.2.0' ] ]
+164 silly addNamed check-types@2.2.0
+165 verbose addNamed "2.2.0" is a plain semver version for check-types
+166 silly cache afterAdd check-types@2.2.0
+167 verbose afterAdd /home/scottm/.npm/check-types/2.2.0/package/package.json not in flight; writing
+168 verbose afterAdd /home/scottm/.npm/check-types/2.2.0/package/package.json written
+169 http 304 https://registry.npmjs.org/mmmagic
+170 silly get cb [ 304,
+170 silly get   { date: 'Sun, 25 Oct 2015 17:07:02 GMT',
+170 silly get     via: '1.1 varnish',
+170 silly get     'cache-control': 'max-age=60',
+170 silly get     etag: '"D86MWZD6I4TF6BKMA6I88NJSY"',
+170 silly get     age: '0',
+170 silly get     connection: 'keep-alive',
+170 silly get     'x-served-by': 'cache-dfw1831-DFW',
+170 silly get     'x-cache': 'MISS',
+170 silly get     'x-cache-hits': '0',
+170 silly get     'x-timer': 'S1445792822.168414,VS0,VE413',
+170 silly get     vary: 'Accept' } ]
+171 verbose etag https://registry.npmjs.org/mmmagic from cache
+172 verbose get saving mmmagic to /home/scottm/.npm/registry.npmjs.org/mmmagic/.cache.json
+173 silly addNameRange number 2 { name: 'mmmagic', range: '>=0.3.0 <0.4.0', hasData: true }
+174 silly addNameRange versions [ 'mmmagic',
+174 silly addNameRange   [ '0.0.1',
+174 silly addNameRange     '0.0.2',
+174 silly addNameRange     '0.1.0',
+174 silly addNameRange     '0.1.1',
+174 silly addNameRange     '0.1.2',
+174 silly addNameRange     '0.2.0',
+174 silly addNameRange     '0.2.1',
+174 silly addNameRange     '0.2.5',
+174 silly addNameRange     '0.3.0',
+174 silly addNameRange     '0.3.1',
+174 silly addNameRange     '0.3.2',
+174 silly addNameRange     '0.3.3',
+174 silly addNameRange     '0.3.4',
+174 silly addNameRange     '0.3.5',
+174 silly addNameRange     '0.3.6',
+174 silly addNameRange     '0.3.7',
+174 silly addNameRange     '0.3.8',
+174 silly addNameRange     '0.3.9',
+174 silly addNameRange     '0.3.10',
+174 silly addNameRange     '0.3.11',
+174 silly addNameRange     '0.3.12',
+174 silly addNameRange     '0.3.13',
+174 silly addNameRange     '0.3.14',
+174 silly addNameRange     '0.3.15',
+174 silly addNameRange     '0.3.16',
+174 silly addNameRange     '0.4.0',
+174 silly addNameRange     '0.4.1' ] ]
+175 silly addNamed mmmagic@0.3.16
+176 verbose addNamed "0.3.16" is a plain semver version for mmmagic
+177 silly cache afterAdd mmmagic@0.3.16
+178 verbose afterAdd /home/scottm/.npm/mmmagic/0.3.16/package/package.json not in flight; writing
+179 verbose afterAdd /home/scottm/.npm/mmmagic/0.3.16/package/package.json written
+180 silly install resolved [ { name: 'async',
+180 silly install resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+180 silly install resolved     main: 'lib/async.js',
+180 silly install resolved     author: { name: 'Caolan McMahon' },
+180 silly install resolved     version: '0.9.2',
+180 silly install resolved     keywords: [ 'async', 'callback', 'utility', 'module' ],
+180 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+180 silly install resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+180 silly install resolved     license: 'MIT',
+180 silly install resolved     devDependencies:
+180 silly install resolved      { nodeunit: '>0.0.0',
+180 silly install resolved        'uglify-js': '1.2.x',
+180 silly install resolved        nodelint: '>0.0.0',
+180 silly install resolved        lodash: '>=2.4.1' },
+180 silly install resolved     jam: { main: 'lib/async.js', include: [Object], categories: [Object] },
+180 silly install resolved     scripts: { test: 'nodeunit test/test-async.js' },
+180 silly install resolved     spm: { main: 'lib/async.js' },
+180 silly install resolved     volo: { main: 'lib/async.js', ignore: [Object] },
+180 silly install resolved     gitHead: 'de3a16091d5125384eff4a54deb3998b13c3814c',
+180 silly install resolved     homepage: 'https://github.com/caolan/async#readme',
+180 silly install resolved     _id: 'async@0.9.2',
+180 silly install resolved     _shasum: 'aea74d5e61c1f899613bf64bda66d4c78f2fd17d',
+180 silly install resolved     _from: 'async@>=0.9.0 <0.10.0',
+180 silly install resolved     _npmVersion: '2.9.0',
+180 silly install resolved     _nodeVersion: '2.0.1',
+180 silly install resolved     _npmUser: { name: 'beaugunderson', email: 'beau@beaugunderson.com' },
+180 silly install resolved     maintainers: [ [Object], [Object] ],
+180 silly install resolved     dist:
+180 silly install resolved      { shasum: 'aea74d5e61c1f899613bf64bda66d4c78f2fd17d',
+180 silly install resolved        tarball: 'http://registry.npmjs.org/async/-/async-0.9.2.tgz' },
+180 silly install resolved     directories: {},
+180 silly install resolved     _resolved: 'https://registry.npmjs.org/async/-/async-0.9.2.tgz',
+180 silly install resolved     readme: 'ERROR: No README data found!' },
+180 silly install resolved   { name: 'check-types',
+180 silly install resolved     version: '2.2.0',
+180 silly install resolved     description: 'A tiny library for asserting types and values.',
+180 silly install resolved     homepage: 'https://github.com/philbooth/check-types.js',
+180 silly install resolved     bugs: { url: 'https://github.com/philbooth/check-types.js/issues' },
+180 silly install resolved     license: 'MIT',
+180 silly install resolved     author:
+180 silly install resolved      { name: 'Phil Booth',
+180 silly install resolved        email: 'pmbooth@gmail.com',
+180 silly install resolved        url: 'https://github.com/philbooth' },
+180 silly install resolved     main: './src/check-types',
+180 silly install resolved     repository:
+180 silly install resolved      { type: 'git',
+180 silly install resolved        url: 'git+https://github.com/philbooth/check-types.js.git' },
+180 silly install resolved     keywords:
+180 silly install resolved      [ 'type',
+180 silly install resolved        'types',
+180 silly install resolved        'type-check',
+180 silly install resolved        'type-checking',
+180 silly install resolved        'duck-typing',
+180 silly install resolved        'arguments',
+180 silly install resolved        'parameters',
+180 silly install resolved        'values',
+180 silly install resolved        'data',
+180 silly install resolved        'contract',
+180 silly install resolved        'assert',
+180 silly install resolved        'check',
+180 silly install resolved        'verify',
+180 silly install resolved        'safe',
+180 silly install resolved        'safety' ],
+180 silly install resolved     devDependencies:
+180 silly install resolved      { jshint: '2.5.x',
+180 silly install resolved        mocha: '2.0.x',
+180 silly install resolved        chai: '1.10.x',
+180 silly install resolved        'uglify-js': '2.4.x' },
+180 silly install resolved     scripts:
+180 silly install resolved      { lint: 'jshint ./src/check-types.js',
+180 silly install resolved        test: 'mocha --ui tdd --reporter spec --colors ./test/check-types.js',
+180 silly install resolved        minify: 'uglifyjs ./src/check-types.js --compress --mangle --output ./src/check-types.min.js' },
+180 silly install resolved     contributors:
+180 silly install resolved      [ [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object],
+180 silly install resolved        [Object] ],
+180 silly install resolved     gitHead: '049dd486dbf9d32dbd44c98012d05e4558954fe5',
+180 silly install resolved     _id: 'check-types@2.2.0',
+180 silly install resolved     _shasum: 'd09314f6f3cc032a7feab4a1b278380dc0ba6b81',
+180 silly install resolved     _from: 'check-types@>=2.2.0 <3.0.0',
+180 silly install resolved     _npmVersion: '2.1.8',
+180 silly install resolved     _nodeVersion: '0.10.33',
+180 silly install resolved     _npmUser: { name: 'philbooth', email: 'pmbooth@gmail.com' },
+180 silly install resolved     maintainers: [ [Object] ],
+180 silly install resolved     dist:
+180 silly install resolved      { shasum: 'd09314f6f3cc032a7feab4a1b278380dc0ba6b81',
+180 silly install resolved        tarball: 'http://registry.npmjs.org/check-types/-/check-types-2.2.0.tgz' },
+180 silly install resolved     directories: {},
+180 silly install resolved     _resolved: 'https://registry.npmjs.org/check-types/-/check-types-2.2.0.tgz',
+180 silly install resolved     readme: 'ERROR: No README data found!' },
+180 silly install resolved   { name: 'mmmagic',
+180 silly install resolved     version: '0.3.16',
+180 silly install resolved     author: { name: 'Brian White', email: 'mscdex@mscdex.net' },
+180 silly install resolved     description: 'An async libmagic binding for node.js for detecting content types by data inspection',
+180 silly install resolved     main: './index',
+180 silly install resolved     dependencies: { nan: '^2.0.8' },
+180 silly install resolved     scripts: { install: 'node-gyp rebuild' },
+180 silly install resolved     engines: { node: '>=0.6.0' },
+180 silly install resolved     keywords: [ 'magic', 'libmagic', 'file', 'filetype', 'mime', 'mimetype' ],
+180 silly install resolved     licenses: [ [Object] ],
+180 silly install resolved     repository:
+180 silly install resolved      { type: 'git',
+180 silly install resolved        url: 'git+ssh://git@github.com/mscdex/mmmagic.git' },
+180 silly install resolved     gypfile: true,
+180 silly install resolved     bugs: { url: 'https://github.com/mscdex/mmmagic/issues' },
+180 silly install resolved     homepage: 'https://github.com/mscdex/mmmagic#readme',
+180 silly install resolved     _id: 'mmmagic@0.3.16',
+180 silly install resolved     _shasum: 'f6c7e443f5135018d93b6127ccbb6d5cab85a522',
+180 silly install resolved     _resolved: 'https://registry.npmjs.org/mmmagic/-/mmmagic-0.3.16.tgz',
+180 silly install resolved     _from: 'mmmagic@>=0.3.0 <0.4.0',
+180 silly install resolved     _npmVersion: '2.11.2',
+180 silly install resolved     _nodeVersion: '0.10.38',
+180 silly install resolved     _npmUser: { name: 'mscdex', email: 'mscdex@mscdex.net' },
+180 silly install resolved     maintainers: [ [Object] ],
+180 silly install resolved     dist:
+180 silly install resolved      { shasum: 'f6c7e443f5135018d93b6127ccbb6d5cab85a522',
+180 silly install resolved        tarball: 'http://registry.npmjs.org/mmmagic/-/mmmagic-0.3.16.tgz' },
+180 silly install resolved     directories: {},
+180 silly install resolved     readme: 'ERROR: No README data found!' } ]
+181 info install async@0.9.2 into /home/scottm/git/yoshi/node_modules/mongoose-crate
+182 info install check-types@2.2.0 into /home/scottm/git/yoshi/node_modules/mongoose-crate
+183 info install mmmagic@0.3.16 into /home/scottm/git/yoshi/node_modules/mongoose-crate
+184 info installOne async@0.9.2
+185 verbose installOne of async to /home/scottm/git/yoshi/node_modules/mongoose-crate not in flight; installing
+186 info installOne check-types@2.2.0
+187 verbose installOne of check-types to /home/scottm/git/yoshi/node_modules/mongoose-crate not in flight; installing
+188 info installOne mmmagic@0.3.16
+189 verbose installOne of mmmagic to /home/scottm/git/yoshi/node_modules/mongoose-crate not in flight; installing
+190 verbose lock using /home/scottm/.npm/_locks/async-1f53fd8d2262932e.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async
+191 verbose lock using /home/scottm/.npm/_locks/check-types-73e53e40855f2ee6.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types
+192 verbose lock using /home/scottm/.npm/_locks/mmmagic-083f232c9e30bb6d.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+193 silly install write writing async 0.9.2 to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async
+194 silly install write writing check-types 2.2.0 to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types
+195 silly install write writing mmmagic 0.3.16 to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+196 verbose unbuild node_modules/mongoose-crate/node_modules/check-types
+197 verbose unbuild node_modules/mongoose-crate/node_modules/mmmagic
+198 verbose unbuild node_modules/mongoose-crate/node_modules/async
+199 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types is being purged from base /home/scottm/git/yoshi
+200 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types
+201 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic is being purged from base /home/scottm/git/yoshi
+202 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+203 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async is being purged from base /home/scottm/git/yoshi
+204 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async
+205 verbose tar unpack /home/scottm/.npm/check-types/2.2.0/package.tgz
+206 verbose tar unpacking to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types
+207 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types is being purged
+208 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types
+209 verbose tar unpack /home/scottm/.npm/mmmagic/0.3.16/package.tgz
+210 verbose tar unpacking to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+211 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic is being purged
+212 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+213 verbose tar unpack /home/scottm/.npm/async/0.9.2/package.tgz
+214 verbose tar unpacking to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async
+215 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async is being purged
+216 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async
+217 silly gunzTarPerm modes [ '755', '644' ]
+218 silly gunzTarPerm modes [ '755', '644' ]
+219 silly gunzTarPerm modes [ '755', '644' ]
+220 silly gunzTarPerm extractEntry package.json
+221 silly gunzTarPerm extractEntry
+222 silly gunzTarPerm modified mode [ '', 509, 493 ]
+223 silly gunzTarPerm extractEntry package.json
+224 silly gunzTarPerm extractEntry .npmignore
+225 silly gunzTarPerm extractEntry README.md
+226 silly gunzTarPerm extractEntry README.md
+227 silly gunzTarPerm extractEntry LICENSE
+228 silly gunzTarPerm extractEntry LICENSE
+229 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+230 silly gunzTarPerm extractEntry README.md
+231 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+232 silly gunzTarPerm extractEntry binding.gyp
+233 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+234 silly gunzTarPerm extractEntry deps/
+235 silly gunzTarPerm modified mode [ 'deps/', 509, 493 ]
+236 silly gunzTarPerm extractEntry deps/libmagic/
+237 silly gunzTarPerm modified mode [ 'deps/libmagic/', 509, 493 ]
+238 silly gunzTarPerm extractEntry .travis.yml
+239 silly gunzTarPerm extractEntry AUTHORS
+240 silly gunzTarPerm extractEntry COPYING
+241 silly gunzTarPerm extractEntry HISTORY.md
+242 silly gunzTarPerm extractEntry bower.json
+243 silly gunzTarPerm extractEntry component.json
+244 silly gunzTarPerm extractEntry src/check-types.js
+245 silly gunzTarPerm extractEntry src/check-types.min.js
+246 silly gunzTarPerm extractEntry .jshintrc
+247 silly gunzTarPerm extractEntry test/check-types.js
+248 silly gunzTarPerm extractEntry test/check-types.html
+249 silly gunzTarPerm extractEntry component.json
+250 silly gunzTarPerm extractEntry .travis.yml
+251 silly gunzTarPerm extractEntry bower.json
+252 silly gunzTarPerm extractEntry deps/libmagic/AUTHORS
+253 silly gunzTarPerm modified mode [ 'deps/libmagic/AUTHORS', 436, 420 ]
+254 silly gunzTarPerm extractEntry deps/libmagic/COPYING
+255 silly gunzTarPerm modified mode [ 'deps/libmagic/COPYING', 436, 420 ]
+256 silly gunzTarPerm extractEntry deps/libmagic/ChangeLog
+257 silly gunzTarPerm modified mode [ 'deps/libmagic/ChangeLog', 436, 420 ]
+258 silly gunzTarPerm extractEntry deps/libmagic/INSTALL
+259 silly gunzTarPerm modified mode [ 'deps/libmagic/INSTALL', 436, 420 ]
+260 silly gunzTarPerm extractEntry deps/libmagic/MAINT
+261 silly gunzTarPerm modified mode [ 'deps/libmagic/MAINT', 436, 420 ]
+262 silly gunzTarPerm extractEntry deps/libmagic/NEWS
+263 silly gunzTarPerm modified mode [ 'deps/libmagic/NEWS', 436, 420 ]
+264 silly gunzTarPerm extractEntry deps/libmagic/README
+265 silly gunzTarPerm modified mode [ 'deps/libmagic/README', 436, 420 ]
+266 silly gunzTarPerm extractEntry lib/async.js
+267 silly gunzTarPerm extractEntry deps/libmagic/TODO
+268 silly gunzTarPerm modified mode [ 'deps/libmagic/TODO', 436, 420 ]
+269 silly gunzTarPerm extractEntry deps/libmagic/config/
+270 silly gunzTarPerm modified mode [ 'deps/libmagic/config/', 509, 493 ]
+271 silly gunzTarPerm extractEntry deps/libmagic/config/freebsd/
+272 silly gunzTarPerm modified mode [ 'deps/libmagic/config/freebsd/', 509, 493 ]
+273 silly gunzTarPerm extractEntry deps/libmagic/config/freebsd/config.h
+274 silly gunzTarPerm modified mode [ 'deps/libmagic/config/freebsd/config.h', 436, 420 ]
+275 silly gunzTarPerm extractEntry deps/libmagic/config/linux/
+276 silly gunzTarPerm modified mode [ 'deps/libmagic/config/linux/', 509, 493 ]
+277 silly gunzTarPerm extractEntry deps/libmagic/config/linux/config.h
+278 silly gunzTarPerm modified mode [ 'deps/libmagic/config/linux/config.h', 436, 420 ]
+279 silly gunzTarPerm extractEntry deps/libmagic/config/mac/
+280 silly gunzTarPerm modified mode [ 'deps/libmagic/config/mac/', 509, 493 ]
+281 silly gunzTarPerm extractEntry deps/libmagic/config/mac/config.h
+282 silly gunzTarPerm modified mode [ 'deps/libmagic/config/mac/config.h', 436, 420 ]
+283 silly gunzTarPerm extractEntry deps/libmagic/config/openbsd/
+284 silly gunzTarPerm modified mode [ 'deps/libmagic/config/openbsd/', 509, 493 ]
+285 silly gunzTarPerm extractEntry deps/libmagic/config/openbsd/config.h
+286 silly gunzTarPerm modified mode [ 'deps/libmagic/config/openbsd/config.h', 436, 420 ]
+287 silly gunzTarPerm extractEntry support/sync-package-managers.js
+288 silly gunzTarPerm extractEntry deps/libmagic/config/sunos/
+289 silly gunzTarPerm modified mode [ 'deps/libmagic/config/sunos/', 509, 493 ]
+290 silly gunzTarPerm extractEntry deps/libmagic/config/sunos/config.h
+291 silly gunzTarPerm modified mode [ 'deps/libmagic/config/sunos/config.h', 436, 420 ]
+292 silly gunzTarPerm extractEntry deps/libmagic/config/win/
+293 silly gunzTarPerm modified mode [ 'deps/libmagic/config/win/', 509, 493 ]
+294 silly gunzTarPerm extractEntry deps/libmagic/config/win/config.h
+295 silly gunzTarPerm modified mode [ 'deps/libmagic/config/win/config.h', 436, 420 ]
+296 silly gunzTarPerm extractEntry deps/libmagic/libmagic.gyp
+297 silly gunzTarPerm modified mode [ 'deps/libmagic/libmagic.gyp', 436, 420 ]
+298 silly gunzTarPerm extractEntry deps/libmagic/msvc/
+299 silly gunzTarPerm modified mode [ 'deps/libmagic/msvc/', 509, 493 ]
+300 silly gunzTarPerm extractEntry deps/libmagic/msvc/dirent.h
+301 silly gunzTarPerm modified mode [ 'deps/libmagic/msvc/dirent.h', 436, 420 ]
+302 silly gunzTarPerm extractEntry deps/libmagic/msvc/inttypes.h
+303 silly gunzTarPerm modified mode [ 'deps/libmagic/msvc/inttypes.h', 436, 420 ]
+304 silly gunzTarPerm extractEntry deps/libmagic/msvc/stdint.h
+305 silly gunzTarPerm modified mode [ 'deps/libmagic/msvc/stdint.h', 436, 420 ]
+306 silly gunzTarPerm extractEntry deps/libmagic/pcre/
+307 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/', 509, 493 ]
+308 silly gunzTarPerm extractEntry deps/libmagic/pcre/AUTHORS
+309 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/AUTHORS', 436, 420 ]
+310 silly gunzTarPerm extractEntry deps/libmagic/pcre/COPYING
+311 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/COPYING', 436, 420 ]
+312 verbose write writing to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async/package.json
+313 info preinstall async@0.9.2
+314 silly gunzTarPerm extractEntry deps/libmagic/pcre/ChangeLog
+315 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/ChangeLog', 436, 420 ]
+316 silly gunzTarPerm extractEntry deps/libmagic/pcre/HACKING
+317 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/HACKING', 436, 420 ]
+318 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async/package.json
+319 silly gunzTarPerm extractEntry deps/libmagic/pcre/INSTALL
+320 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/INSTALL', 436, 420 ]
+321 silly gunzTarPerm extractEntry deps/libmagic/pcre/LICENCE
+322 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/LICENCE', 436, 420 ]
+323 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async/package.json
+324 verbose write writing to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types/package.json
+325 silly gunzTarPerm extractEntry deps/libmagic/pcre/NEWS
+326 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/NEWS', 436, 420 ]
+327 silly gunzTarPerm extractEntry deps/libmagic/pcre/NON-AUTOTOOLS-BUILD
+328 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/NON-AUTOTOOLS-BUILD', 436, 420 ]
+329 silly install resolved []
+330 verbose about to build /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async
+331 info build /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async
+332 info preinstall check-types@2.2.0
+333 info linkStuff async@0.9.2
+334 silly linkStuff async@0.9.2 has /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules as its parent node_modules
+335 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types/package.json
+336 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types/package.json
+337 verbose linkBins async@0.9.2
+338 verbose linkMans async@0.9.2
+339 verbose rebuildBundles async@0.9.2
+340 info install async@0.9.2
+341 silly install resolved []
+342 verbose about to build /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types
+343 info build /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types
+344 info postinstall async@0.9.2
+345 verbose unlock done using /home/scottm/.npm/_locks/async-1f53fd8d2262932e.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/async
+346 info linkStuff check-types@2.2.0
+347 silly linkStuff check-types@2.2.0 has /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules as its parent node_modules
+348 silly gunzTarPerm extractEntry deps/libmagic/pcre/NON-UNIX-USE
+349 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/NON-UNIX-USE', 436, 420 ]
+350 silly gunzTarPerm extractEntry deps/libmagic/pcre/README
+351 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/README', 436, 420 ]
+352 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/
+353 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/', 509, 493 ]
+354 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/freebsd/
+355 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/freebsd/', 509, 493 ]
+356 verbose linkBins check-types@2.2.0
+357 verbose linkMans check-types@2.2.0
+358 verbose rebuildBundles check-types@2.2.0
+359 info install check-types@2.2.0
+360 info postinstall check-types@2.2.0
+361 verbose unlock done using /home/scottm/.npm/_locks/check-types-73e53e40855f2ee6.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/check-types
+362 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/freebsd/config.h
+363 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/freebsd/config.h', 436, 420 ]
+364 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/linux/
+365 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/linux/', 509, 493 ]
+366 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/linux/config.h
+367 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/linux/config.h', 436, 420 ]
+368 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/mac/
+369 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/mac/', 509, 493 ]
+370 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/mac/config.h
+371 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/mac/config.h', 436, 420 ]
+372 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/openbsd/
+373 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/openbsd/', 509, 493 ]
+374 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/openbsd/config.h
+375 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/openbsd/config.h', 436, 420 ]
+376 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/sunos/
+377 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/sunos/', 509, 493 ]
+378 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/sunos/config.h
+379 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/sunos/config.h', 436, 420 ]
+380 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/win/
+381 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/win/', 509, 493 ]
+382 silly gunzTarPerm extractEntry deps/libmagic/pcre/config/win/config.h
+383 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/config/win/config.h', 436, 420 ]
+384 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre.gyp
+385 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre.gyp', 436, 420 ]
+386 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre.h
+387 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre.h', 436, 420 ]
+388 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_byte_order.c
+389 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_byte_order.c', 436, 420 ]
+390 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_chartables.c
+391 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_chartables.c', 436, 420 ]
+392 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_compile.c
+393 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_compile.c', 436, 420 ]
+394 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_config.c
+395 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_config.c', 436, 420 ]
+396 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_dfa_exec.c
+397 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_dfa_exec.c', 436, 420 ]
+398 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_exec.c
+399 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_exec.c', 436, 420 ]
+400 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_fullinfo.c
+401 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_fullinfo.c', 436, 420 ]
+402 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_get.c
+403 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_get.c', 436, 420 ]
+404 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_globals.c
+405 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_globals.c', 436, 420 ]
+406 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_internal.h
+407 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_internal.h', 436, 420 ]
+408 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_jit_compile.c
+409 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_jit_compile.c', 436, 420 ]
+410 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_maketables.c
+411 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_maketables.c', 436, 420 ]
+412 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_newline.c
+413 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_newline.c', 436, 420 ]
+414 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_ord2utf8.c
+415 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_ord2utf8.c', 436, 420 ]
+416 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_printint.c
+417 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_printint.c', 436, 420 ]
+418 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_refcount.c
+419 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_refcount.c', 436, 420 ]
+420 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_string_utils.c
+421 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_string_utils.c', 436, 420 ]
+422 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_study.c
+423 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_study.c', 436, 420 ]
+424 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_tables.c
+425 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_tables.c', 436, 420 ]
+426 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_ucd.c
+427 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_ucd.c', 436, 420 ]
+428 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_valid_utf8.c
+429 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_valid_utf8.c', 436, 420 ]
+430 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_version.c
+431 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_version.c', 436, 420 ]
+432 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcre_xclass.c
+433 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcre_xclass.c', 436, 420 ]
+434 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcreposix.c
+435 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcreposix.c', 436, 420 ]
+436 silly gunzTarPerm extractEntry deps/libmagic/pcre/pcreposix.h
+437 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/pcreposix.h', 436, 420 ]
+438 silly gunzTarPerm extractEntry deps/libmagic/pcre/regex.h
+439 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/regex.h', 436, 420 ]
+440 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/
+441 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/', 509, 493 ]
+442 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitConfig.h
+443 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitConfig.h', 436, 420 ]
+444 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitConfigInternal.h
+445 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitConfigInternal.h', 436, 420 ]
+446 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitExecAllocator.c
+447 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitExecAllocator.c', 436, 420 ]
+448 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitLir.c
+449 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitLir.c', 436, 420 ]
+450 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitLir.h
+451 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitLir.h', 436, 420 ]
+452 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeARM_Thumb2.c
+453 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeARM_Thumb2.c', 436, 420 ]
+454 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeARM_v5.c
+455 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeARM_v5.c', 436, 420 ]
+456 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeMIPS_32.c
+457 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeMIPS_32.c', 436, 420 ]
+458 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeMIPS_common.c
+459 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeMIPS_common.c', 436, 420 ]
+460 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativePPC_32.c
+461 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativePPC_32.c', 436, 420 ]
+462 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativePPC_64.c
+463 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativePPC_64.c', 436, 420 ]
+464 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativePPC_common.c
+465 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativePPC_common.c', 436, 420 ]
+466 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeSPARC_32.c
+467 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeSPARC_32.c', 436, 420 ]
+468 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeSPARC_common.c
+469 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeSPARC_common.c',
+469 silly gunzTarPerm   436,
+469 silly gunzTarPerm   420 ]
+470 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeX86_32.c
+471 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeX86_32.c', 436, 420 ]
+472 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeX86_64.c
+473 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeX86_64.c', 436, 420 ]
+474 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitNativeX86_common.c
+475 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitNativeX86_common.c', 436, 420 ]
+476 silly gunzTarPerm extractEntry deps/libmagic/pcre/sljit/sljitUtils.c
+477 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/sljit/sljitUtils.c', 436, 420 ]
+478 silly gunzTarPerm extractEntry deps/libmagic/pcre/ucp.h
+479 silly gunzTarPerm modified mode [ 'deps/libmagic/pcre/ucp.h', 436, 420 ]
+480 silly gunzTarPerm extractEntry deps/libmagic/src/
+481 silly gunzTarPerm modified mode [ 'deps/libmagic/src/', 509, 493 ]
+482 silly gunzTarPerm extractEntry deps/libmagic/src/BNF
+483 silly gunzTarPerm modified mode [ 'deps/libmagic/src/BNF', 436, 420 ]
+484 silly gunzTarPerm extractEntry deps/libmagic/src/apprentice.c
+485 silly gunzTarPerm modified mode [ 'deps/libmagic/src/apprentice.c', 436, 420 ]
+486 silly gunzTarPerm extractEntry deps/libmagic/src/apptype.c
+487 silly gunzTarPerm modified mode [ 'deps/libmagic/src/apptype.c', 436, 420 ]
+488 silly gunzTarPerm extractEntry deps/libmagic/src/ascmagic.c
+489 silly gunzTarPerm modified mode [ 'deps/libmagic/src/ascmagic.c', 436, 420 ]
+490 silly gunzTarPerm extractEntry deps/libmagic/src/asctime_r.c
+491 silly gunzTarPerm modified mode [ 'deps/libmagic/src/asctime_r.c', 436, 420 ]
+492 silly gunzTarPerm extractEntry deps/libmagic/src/asprintf.c
+493 silly gunzTarPerm modified mode [ 'deps/libmagic/src/asprintf.c', 436, 420 ]
+494 silly gunzTarPerm extractEntry deps/libmagic/src/cdf.c
+495 silly gunzTarPerm modified mode [ 'deps/libmagic/src/cdf.c', 436, 420 ]
+496 silly gunzTarPerm extractEntry deps/libmagic/src/cdf.h
+497 silly gunzTarPerm modified mode [ 'deps/libmagic/src/cdf.h', 436, 420 ]
+498 silly gunzTarPerm extractEntry deps/libmagic/src/cdf_time.c
+499 silly gunzTarPerm modified mode [ 'deps/libmagic/src/cdf_time.c', 436, 420 ]
+500 silly gunzTarPerm extractEntry deps/libmagic/src/compress.c
+501 silly gunzTarPerm modified mode [ 'deps/libmagic/src/compress.c', 436, 420 ]
+502 silly gunzTarPerm extractEntry deps/libmagic/src/ctime_r.c
+503 silly gunzTarPerm modified mode [ 'deps/libmagic/src/ctime_r.c', 436, 420 ]
+504 silly gunzTarPerm extractEntry deps/libmagic/src/elfclass.h
+505 silly gunzTarPerm modified mode [ 'deps/libmagic/src/elfclass.h', 436, 420 ]
+506 silly gunzTarPerm extractEntry deps/libmagic/src/encoding.c
+507 silly gunzTarPerm modified mode [ 'deps/libmagic/src/encoding.c', 436, 420 ]
+508 silly gunzTarPerm extractEntry deps/libmagic/src/file.c
+509 silly gunzTarPerm modified mode [ 'deps/libmagic/src/file.c', 436, 420 ]
+510 silly gunzTarPerm extractEntry deps/libmagic/src/file.h
+511 silly gunzTarPerm modified mode [ 'deps/libmagic/src/file.h', 436, 420 ]
+512 silly gunzTarPerm extractEntry deps/libmagic/src/file_opts.h
+513 silly gunzTarPerm modified mode [ 'deps/libmagic/src/file_opts.h', 436, 420 ]
+514 silly gunzTarPerm extractEntry deps/libmagic/src/fmtcheck.c
+515 silly gunzTarPerm modified mode [ 'deps/libmagic/src/fmtcheck.c', 436, 420 ]
+516 silly gunzTarPerm extractEntry deps/libmagic/src/fsmagic.c
+517 silly gunzTarPerm modified mode [ 'deps/libmagic/src/fsmagic.c', 436, 420 ]
+518 silly gunzTarPerm extractEntry deps/libmagic/src/funcs.c
+519 silly gunzTarPerm modified mode [ 'deps/libmagic/src/funcs.c', 436, 420 ]
+520 silly gunzTarPerm extractEntry deps/libmagic/src/getline.c
+521 silly gunzTarPerm modified mode [ 'deps/libmagic/src/getline.c', 436, 420 ]
+522 silly gunzTarPerm extractEntry deps/libmagic/src/getopt_long.c
+523 silly gunzTarPerm modified mode [ 'deps/libmagic/src/getopt_long.c', 436, 420 ]
+524 silly gunzTarPerm extractEntry deps/libmagic/src/gmtime_r.c
+525 silly gunzTarPerm modified mode [ 'deps/libmagic/src/gmtime_r.c', 436, 420 ]
+526 silly gunzTarPerm extractEntry deps/libmagic/src/is_tar.c
+527 silly gunzTarPerm modified mode [ 'deps/libmagic/src/is_tar.c', 436, 420 ]
+528 silly gunzTarPerm extractEntry deps/libmagic/src/localtime_r.c
+529 silly gunzTarPerm modified mode [ 'deps/libmagic/src/localtime_r.c', 436, 420 ]
+530 silly gunzTarPerm extractEntry deps/libmagic/src/magic.c
+531 silly gunzTarPerm modified mode [ 'deps/libmagic/src/magic.c', 436, 420 ]
+532 silly gunzTarPerm extractEntry deps/libmagic/src/magic.h
+533 silly gunzTarPerm modified mode [ 'deps/libmagic/src/magic.h', 436, 420 ]
+534 silly gunzTarPerm extractEntry deps/libmagic/src/mygetopt.h
+535 silly gunzTarPerm modified mode [ 'deps/libmagic/src/mygetopt.h', 436, 420 ]
+536 silly gunzTarPerm extractEntry deps/libmagic/src/pread.c
+537 silly gunzTarPerm modified mode [ 'deps/libmagic/src/pread.c', 436, 420 ]
+538 silly gunzTarPerm extractEntry deps/libmagic/src/print.c
+539 silly gunzTarPerm modified mode [ 'deps/libmagic/src/print.c', 436, 420 ]
+540 silly gunzTarPerm extractEntry deps/libmagic/src/readcdf.c
+541 silly gunzTarPerm modified mode [ 'deps/libmagic/src/readcdf.c', 436, 420 ]
+542 silly gunzTarPerm extractEntry deps/libmagic/src/readelf.c
+543 silly gunzTarPerm modified mode [ 'deps/libmagic/src/readelf.c', 436, 420 ]
+544 silly gunzTarPerm extractEntry deps/libmagic/src/readelf.h
+545 silly gunzTarPerm modified mode [ 'deps/libmagic/src/readelf.h', 436, 420 ]
+546 silly gunzTarPerm extractEntry deps/libmagic/src/softmagic.c
+547 silly gunzTarPerm modified mode [ 'deps/libmagic/src/softmagic.c', 436, 420 ]
+548 silly gunzTarPerm extractEntry deps/libmagic/src/strcasestr.c
+549 silly gunzTarPerm modified mode [ 'deps/libmagic/src/strcasestr.c', 436, 420 ]
+550 silly gunzTarPerm extractEntry deps/libmagic/src/strlcat.c
+551 silly gunzTarPerm modified mode [ 'deps/libmagic/src/strlcat.c', 436, 420 ]
+552 silly gunzTarPerm extractEntry deps/libmagic/src/strlcpy.c
+553 silly gunzTarPerm modified mode [ 'deps/libmagic/src/strlcpy.c', 436, 420 ]
+554 silly gunzTarPerm extractEntry deps/libmagic/src/tar.h
+555 silly gunzTarPerm modified mode [ 'deps/libmagic/src/tar.h', 436, 420 ]
+556 silly gunzTarPerm extractEntry deps/libmagic/src/vasprintf.c
+557 silly gunzTarPerm modified mode [ 'deps/libmagic/src/vasprintf.c', 436, 420 ]
+558 silly gunzTarPerm extractEntry index.js
+559 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+560 silly gunzTarPerm extractEntry magic/
+561 silly gunzTarPerm modified mode [ 'magic/', 509, 493 ]
+562 silly gunzTarPerm extractEntry magic/magic.mgc
+563 silly gunzTarPerm modified mode [ 'magic/magic.mgc', 436, 420 ]
+564 silly gunzTarPerm extractEntry package.json
+565 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+566 silly gunzTarPerm extractEntry src/
+567 silly gunzTarPerm modified mode [ 'src/', 509, 493 ]
+568 silly gunzTarPerm extractEntry src/magic.cc
+569 silly gunzTarPerm modified mode [ 'src/magic.cc', 436, 420 ]
+570 verbose write writing to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/package.json
+571 info preinstall mmmagic@0.3.16
+572 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/package.json
+573 silly prepareForInstallMany adding nan@^2.0.8 from mmmagic dependencies
+574 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/package.json
+575 silly cache add args [ 'nan@^2.0.8', null ]
+576 verbose cache add spec nan@^2.0.8
+577 silly cache add parsed spec { raw: 'nan@^2.0.8',
+577 silly cache add   scope: null,
+577 silly cache add   name: 'nan',
+577 silly cache add   rawSpec: '^2.0.8',
+577 silly cache add   spec: '>=2.0.8 <3.0.0',
+577 silly cache add   type: 'range' }
+578 silly addNamed nan@>=2.0.8 <3.0.0
+579 verbose addNamed ">=2.0.8 <3.0.0" is a valid semver range for nan
+580 silly addNameRange { name: 'nan', range: '>=2.0.8 <3.0.0', hasData: false }
+581 silly mapToRegistry name nan
+582 silly mapToRegistry using default registry
+583 silly mapToRegistry registry https://registry.npmjs.org/
+584 silly mapToRegistry uri https://registry.npmjs.org/nan
+585 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+586 verbose request uri https://registry.npmjs.org/nan
+587 verbose request no auth needed
+588 info attempt registry request try #1 at 12:07:02
+589 verbose etag "CJ3ZKOY24CWA1LM0KQ4KE7PG1"
+590 http request GET https://registry.npmjs.org/nan
+591 http 304 https://registry.npmjs.org/nan
+592 silly get cb [ 304,
+592 silly get   { date: 'Sun, 25 Oct 2015 17:07:03 GMT',
+592 silly get     via: '1.1 varnish',
+592 silly get     'cache-control': 'max-age=60',
+592 silly get     etag: '"CJ3ZKOY24CWA1LM0KQ4KE7PG1"',
+592 silly get     age: '31',
+592 silly get     connection: 'keep-alive',
+592 silly get     'x-served-by': 'cache-dfw1824-DFW',
+592 silly get     'x-cache': 'HIT',
+592 silly get     'x-cache-hits': '2',
+592 silly get     'x-timer': 'S1445792823.073222,VS0,VE0',
+592 silly get     vary: 'Accept' } ]
+593 verbose etag https://registry.npmjs.org/nan from cache
+594 verbose get saving nan to /home/scottm/.npm/registry.npmjs.org/nan/.cache.json
+595 silly addNameRange number 2 { name: 'nan', range: '>=2.0.8 <3.0.0', hasData: true }
+596 silly addNameRange versions [ 'nan',
+596 silly addNameRange   [ '0.3.0-wip',
+596 silly addNameRange     '0.3.0-wip2',
+596 silly addNameRange     '0.3.0',
+596 silly addNameRange     '0.3.1',
+596 silly addNameRange     '0.3.2',
+596 silly addNameRange     '0.4.0',
+596 silly addNameRange     '0.4.1',
+596 silly addNameRange     '0.4.2',
+596 silly addNameRange     '0.4.3',
+596 silly addNameRange     '0.4.4',
+596 silly addNameRange     '0.5.0',
+596 silly addNameRange     '0.5.1',
+596 silly addNameRange     '0.5.2',
+596 silly addNameRange     '0.6.0',
+596 silly addNameRange     '0.7.0',
+596 silly addNameRange     '0.7.1',
+596 silly addNameRange     '0.8.0',
+596 silly addNameRange     '1.0.0',
+596 silly addNameRange     '1.1.0',
+596 silly addNameRange     '1.1.1',
+596 silly addNameRange     '1.1.2',
+596 silly addNameRange     '1.2.0',
+596 silly addNameRange     '1.3.0',
+596 silly addNameRange     '1.4.0',
+596 silly addNameRange     '1.4.1',
+596 silly addNameRange     '1.5.0',
+596 silly addNameRange     '1.4.2',
+596 silly addNameRange     '1.4.3',
+596 silly addNameRange     '1.5.1',
+596 silly addNameRange     '1.5.2',
+596 silly addNameRange     '1.6.0',
+596 silly addNameRange     '1.5.3',
+596 silly addNameRange     '1.6.1',
+596 silly addNameRange     '1.6.2',
+596 silly addNameRange     '1.7.0',
+596 silly addNameRange     '1.8.0',
+596 silly addNameRange     '1.8.1',
+596 silly addNameRange     '1.8.2',
+596 silly addNameRange     '1.8.3',
+596 silly addNameRange     '1.8.4',
+596 silly addNameRange     '1.9.0',
+596 silly addNameRange     '2.0.0',
+596 silly addNameRange     '2.0.1',
+596 silly addNameRange     '2.0.2',
+596 silly addNameRange     '2.0.3',
+596 silly addNameRange     '2.0.4',
+596 silly addNameRange     '2.0.5',
+596 silly addNameRange     '2.0.6',
+596 silly addNameRange     '2.0.7',
+596 silly addNameRange     '2.0.8',
+596 silly addNameRange     '2.0.9',
+596 silly addNameRange     '2.1.0' ] ]
+597 silly addNamed nan@2.1.0
+598 verbose addNamed "2.1.0" is a plain semver version for nan
+599 silly cache afterAdd nan@2.1.0
+600 verbose afterAdd /home/scottm/.npm/nan/2.1.0/package/package.json not in flight; writing
+601 verbose afterAdd /home/scottm/.npm/nan/2.1.0/package/package.json written
+602 silly install resolved [ { name: 'nan',
+602 silly install resolved     version: '2.1.0',
+602 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 4 compatibility',
+602 silly install resolved     main: 'include_dirs.js',
+602 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+602 silly install resolved     scripts:
+602 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+602 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+602 silly install resolved        docs: 'doc/.build.sh' },
+602 silly install resolved     contributors:
+602 silly install resolved      [ [Object],
+602 silly install resolved        [Object],
+602 silly install resolved        [Object],
+602 silly install resolved        [Object],
+602 silly install resolved        [Object],
+602 silly install resolved        [Object],
+602 silly install resolved        [Object] ],
+602 silly install resolved     devDependencies:
+602 silly install resolved      { bindings: '~1.2.1',
+602 silly install resolved        commander: '^2.8.1',
+602 silly install resolved        glob: '^5.0.14',
+602 silly install resolved        'node-gyp': '~3.0.1',
+602 silly install resolved        tap: '~0.7.1',
+602 silly install resolved        xtend: '~4.0.0' },
+602 silly install resolved     license: 'MIT',
+602 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+602 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+602 silly install resolved     _id: 'nan@2.1.0',
+602 silly install resolved     _shasum: '020a7ccedc63fdee85f85967d5607849e74abbe8',
+602 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.1.0.tgz',
+602 silly install resolved     _from: 'nan@>=2.0.8 <3.0.0',
+602 silly install resolved     _npmVersion: '3.3.5',
+602 silly install resolved     _nodeVersion: '4.1.2',
+602 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+602 silly install resolved     dist:
+602 silly install resolved      { shasum: '020a7ccedc63fdee85f85967d5607849e74abbe8',
+602 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-2.1.0.tgz' },
+602 silly install resolved     maintainers: [ [Object], [Object] ],
+602 silly install resolved     directories: {},
+602 silly install resolved     readme: 'ERROR: No README data found!' } ]
+603 info install nan@2.1.0 into /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+604 info installOne nan@2.1.0
+605 verbose installOne of nan to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic not in flight; installing
+606 verbose lock using /home/scottm/.npm/_locks/nan-c8ed2c3c9e28cdc5.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+607 silly install write writing nan 2.1.0 to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+608 verbose unbuild node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+609 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan is being purged from base /home/scottm/git/yoshi
+610 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+611 verbose tar unpack /home/scottm/.npm/nan/2.1.0/package.tgz
+612 verbose tar unpacking to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+613 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan is being purged
+614 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+615 silly gunzTarPerm modes [ '755', '644' ]
+616 silly gunzTarPerm extractEntry package.json
+617 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+618 silly gunzTarPerm extractEntry README.md
+619 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+620 silly gunzTarPerm extractEntry include_dirs.js
+621 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+622 silly gunzTarPerm extractEntry nan_converters.h
+623 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+624 silly gunzTarPerm extractEntry LICENSE.md
+625 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+626 silly gunzTarPerm extractEntry .dntrc
+627 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+628 silly gunzTarPerm extractEntry appveyor.yml
+629 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+630 silly gunzTarPerm extractEntry doc/new.md
+631 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+632 silly gunzTarPerm extractEntry doc/.build.sh
+633 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 493 ]
+634 silly gunzTarPerm extractEntry doc/buffers.md
+635 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+636 silly gunzTarPerm extractEntry doc/callback.md
+637 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+638 silly gunzTarPerm extractEntry doc/converters.md
+639 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+640 silly gunzTarPerm extractEntry doc/errors.md
+641 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+642 silly gunzTarPerm extractEntry doc/maybe_types.md
+643 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+644 silly gunzTarPerm extractEntry doc/methods.md
+645 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+646 silly gunzTarPerm extractEntry doc/asyncworker.md
+647 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+648 silly gunzTarPerm extractEntry doc/node_misc.md
+649 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+650 silly gunzTarPerm extractEntry doc/persistent.md
+651 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+652 silly gunzTarPerm extractEntry doc/scopes.md
+653 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+654 silly gunzTarPerm extractEntry doc/script.md
+655 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+656 silly gunzTarPerm extractEntry doc/string_bytes.md
+657 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+658 silly gunzTarPerm extractEntry doc/v8_internals.md
+659 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+660 silly gunzTarPerm extractEntry doc/v8_misc.md
+661 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+662 silly gunzTarPerm extractEntry nan.h
+663 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+664 silly gunzTarPerm extractEntry nan_callbacks.h
+665 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+666 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+667 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+668 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+669 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+670 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+671 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+672 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+673 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+674 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+675 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+676 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+677 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+678 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+679 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+680 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+681 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+682 silly gunzTarPerm extractEntry nan_new.h
+683 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+684 silly gunzTarPerm extractEntry nan_object_wrap.h
+685 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+686 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+687 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+688 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+689 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+690 silly gunzTarPerm extractEntry nan_string_bytes.h
+691 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+692 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+693 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+694 silly gunzTarPerm extractEntry nan_weak.h
+695 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+696 silly gunzTarPerm extractEntry CHANGELOG.md
+697 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+698 silly gunzTarPerm extractEntry tools/package.json
+699 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+700 silly gunzTarPerm extractEntry tools/README.md
+701 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+702 silly gunzTarPerm extractEntry tools/1to2.js
+703 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+704 verbose write writing to /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan/package.json
+705 info preinstall nan@2.1.0
+706 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan/package.json
+707 verbose readDependencies loading dependencies from /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan/package.json
+708 silly install resolved []
+709 verbose about to build /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+710 info build /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+711 info linkStuff nan@2.1.0
+712 silly linkStuff nan@2.1.0 has /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules as its parent node_modules
+713 verbose linkBins nan@2.1.0
+714 verbose linkMans nan@2.1.0
+715 verbose rebuildBundles nan@2.1.0
+716 info install nan@2.1.0
+717 info postinstall nan@2.1.0
+718 verbose unlock done using /home/scottm/.npm/_locks/nan-c8ed2c3c9e28cdc5.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic/node_modules/nan
+719 verbose about to build /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+720 info build /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+721 info linkStuff mmmagic@0.3.16
+722 silly linkStuff mmmagic@0.3.16 has /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules as its parent node_modules
+723 verbose linkBins mmmagic@0.3.16
+724 verbose linkMans mmmagic@0.3.16
+725 verbose rebuildBundles mmmagic@0.3.16
+726 verbose rebuildBundles [ 'nan' ]
+727 info install mmmagic@0.3.16
+728 verbose unsafe-perm in lifecycle false
+729 info mmmagic@0.3.16 Failed to exec install script
+730 verbose unlock done using /home/scottm/.npm/_locks/mmmagic-083f232c9e30bb6d.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+731 verbose about to build /home/scottm/git/yoshi/node_modules/mongoose-crate
+732 verbose unlock done using /home/scottm/.npm/_locks/mongoose-crate-023ca7e1e7558b29.lock for /home/scottm/git/yoshi/node_modules/mongoose-crate
+733 verbose stack Error: mmmagic@0.3.16 install: `node-gyp rebuild`
+733 verbose stack Exit status 1
+733 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+733 verbose stack     at EventEmitter.emit (events.js:110:17)
+733 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+733 verbose stack     at ChildProcess.emit (events.js:110:17)
+733 verbose stack     at maybeClose (child_process.js:1015:16)
+733 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+734 verbose pkgid mmmagic@0.3.16
+735 verbose cwd /home/scottm/git/yoshi
+736 error Linux 3.19.0-31-generic
+737 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+738 error node v0.12.7
+739 error npm  v2.11.3
+740 error code ELIFECYCLE
+741 error mmmagic@0.3.16 install: `node-gyp rebuild`
+741 error Exit status 1
+742 error Failed at the mmmagic@0.3.16 install script 'node-gyp rebuild'.
+742 error This is most likely a problem with the mmmagic package,
+742 error not with npm itself.
+742 error Tell the author that this fails on your system:
+742 error     node-gyp rebuild
+742 error You can get their info via:
+742 error     npm owner ls mmmagic
+742 error There is likely additional logging output above.
+743 verbose exit [ 1, true ]
+744 verbose unbuild node_modules/mongoose-crate/node_modules/mmmagic
+745 info preuninstall mmmagic@0.3.16
+746 info uninstall mmmagic@0.3.16
+747 verbose unbuild rmStuff mmmagic@0.3.16 from /home/scottm/git/yoshi/node_modules
+748 verbose unbuild rmStuff in /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules
+749 info postuninstall mmmagic@0.3.16
+750 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic is being purged from base /home/scottm/git/yoshi
+751 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+752 silly vacuum-fs purging /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules/mmmagic
+753 silly vacuum-fs quitting because other entries in /home/scottm/git/yoshi/node_modules/mongoose-crate/node_modules
+754 verbose unbuild node_modules/mongoose-crate
+755 info preuninstall mongoose-crate@1.0.10
+756 info uninstall mongoose-crate@1.0.10
+757 verbose unbuild rmStuff mongoose-crate@1.0.10 from /home/scottm/git/yoshi/node_modules
+758 info postuninstall mongoose-crate@1.0.10
+759 silly gentlyRm /home/scottm/git/yoshi/node_modules/mongoose-crate is being purged from base /home/scottm/git/yoshi
+760 verbose gentlyRm don't care about contents; nuking /home/scottm/git/yoshi/node_modules/mongoose-crate
+761 silly vacuum-fs purging /home/scottm/git/yoshi/node_modules/mongoose-crate
+762 silly vacuum-fs quitting because other entries in /home/scottm/git/yoshi/node_modules
