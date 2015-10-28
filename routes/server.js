@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 //MongoDB
-mongoose.connect('mongodb://localhost/test_test');
+mongoose.connect('mongodb://scott7m:merritt7@ds045644.mongolab.com:45644/heroku_rgq5rv72');
 
 //Express
 var app = express();

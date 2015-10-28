@@ -1,7 +1,7 @@
 {
   "name": "cis-395-music-mmo",
   "version": "1.0.0",
-  "description": "A musical MMO game",
+  "description": "A musical MMO api",
   "main": "routes/server.js",
   "scripts": {
     "start": "node outes/server.js"
@@ -32,3 +32,4 @@
   "devDependencies": {},
   "author": "Fahad, Mark, and Scott"
 }
+
