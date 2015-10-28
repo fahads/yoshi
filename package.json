@@ -2,9 +2,9 @@
   "name": "cis-395-music-mmo",
   "version": "1.0.0",
   "description": "A musical MMO game",
-  "main": "index.js",
+  "main": "../routes/server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ../routes/server.js"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/scott7m/cis-395-music-mmo.git"
+    "url": "git+https://github.com/fahads/yoshi.git"
   },
   "keywords": [
     "node",
