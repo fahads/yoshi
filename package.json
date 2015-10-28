@@ -2,9 +2,9 @@
   "name": "cis-395-music-mmo",
   "version": "1.0.0",
   "description": "A musical MMO game",
-  "main": "../routes/server.js",
+  "main": "routes/server.js",
   "scripts": {
-    "start": "node ../routes/server.js"
+    "start": "node outes/server.js"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
