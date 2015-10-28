@@ -10,4 +10,4 @@ var productSchema = new mongoose.Schema({
 });
 
 // Return model
-module.exports = restful.model('Products', productSchema);
+module.exports = restful.model('Songs', productSchema);
