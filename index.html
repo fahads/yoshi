@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+    <title>Musicador</title>
+</head>
+
+<body>
+<div id="container" style="min-height: 100%;">
+<!--row 1 navigation -->
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  MENU
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" class="active">Start</a></li>
+                    <li><a href="#">Arena</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">My Dashboard</a></li>
+                    <li><a href="#">My Groups</a></li>
+                    <li><a href="#">About</a></li>
+                </ul> 
+            </div>
+        </nav>
+    </div>
+<!--row 2 body-->
+<div class="row" style="overflow:auto;">
+    <div class="col-lg-3 col-md-3 col-sm-1">
+    <!-- TBD My Invitations Sessions and Groups -->
+    </div>
+    <!-- PRIMARY FUNCTIONALITY CENTER COLUMN -->
+    <div class="col-lg-6 col-md-6 col-sm-10">
+        <div class="this-logo">
+            <img src="images/logoblack400w.png" alt="Musicador logo: a bird made of musical notes spreading its wings">
+        </div>
+        <div class="this-titlebar">
+         <p>Get Ready to Jam!</p>           
+        </div>
+         <h4>How to create a session</h4>
+          <form action="">
+             <div class="form-group">
+                 <label for="selectInstrument">Step 1: Your Instrument</label>
+                 <select class="form-control" autofocus size="5" id="selectInstrument" required> 
+                      <option value="piano">Piano</option>
+                      <option value="electricpiano">Electric Piano</option>
+                      <option value="guitar">Guitar</option>
+                      <option value="bassguitar">Bass Guitar</option>
+                      <option value="dulcimerorgan">Dulcimer Organ</option>
+                      <option value="violin">Violin</option>
+                      <option value="viola">Viola</option>
+                      <option value="clarinet">Clarinet</option>
+                 </select>
+             </div>
+             <div class="form-group">
+                <label for="inputName">Step 2: Your Name</label>
+                <input class="form-control" type="text" id="inputName" placeholder="Enter your stage name." required>
+            </div> 
+             <div class="form-group">
+                <label for="inputSession">Step 3: Your Session Name</label>
+                <input class="form-control" type="text" id="inputSession" placeholder="Give your jam session a name." required>
+            </div>  
+              <div class="form-group">
+                <label for="createSession">Step 4: Create the Session!</label>
+                <input class="form-control btn btn-info" value="Create Session" type="button" id="createSession" placeholder="Create Session" required>
+            </div>
+          </form>
+          <div>
+            <!--    Placeholder for user instructions  -->
+            <p><br><br><br><br><br></p>
+          </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-1">
+    <!-- TBD Pods Dashboard, Profile, etc.    -->
+    </div>
+</div>
+<!--END CONTAINER-->
+</div>
+<!--row 3 footer-->
+<footer class="music-footer">
+    <div class="row">
+        <div><img src="images/MusicFooterSmTransparent.png"></div>
+    </div>
+</footer>
+<!-- Bootstrap JavaScript -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
