@@ -1,1 +1,1 @@
-var app = angular.module('musicMMO');
+var app = angular.module('musicMMO', []);
