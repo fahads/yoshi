@@ -2,9 +2,9 @@
   "name": "cis-395-music-mmo",
   "version": "0.0.1",
   "description": "A musical MMO game",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.html"
+    "start": "node index.js"
   },
   "dependencies": {
     "soundfont-player": "0.4.0",
