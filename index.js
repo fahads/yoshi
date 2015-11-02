@@ -9,6 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+
 //app.get('/', function(request, response) {
 //response.send("Welcome to the Music MMO! (C) Northwestern University. Fahad, Mark, and Scott.");
 //});
