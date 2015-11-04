@@ -5,6 +5,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongo = require('mongodb').MongoClient, assert = require('assert');
+var uri = 'mongodb://damp-depths:damp-depths@ds045714.mongolab.com:45714/heroku_6l2wbtts';
+
+mongo.connect(uri, function(err, db) {
+  assert.equal(null, err);
+  console.log("Connected to db.");
+  db.close();
+})
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
