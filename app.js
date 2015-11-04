@@ -9,6 +9,12 @@ var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('mongodb://damp-depths:damp-depths@ds045714.mongolab.com:45714/heroku_6l2wbtts');
 
+var documents = db.get('documents');
+documents.insert({ a: 'b' }, function (err, doc) {
+  if (err) throw err;
+  console.log("document successfully inserted");
+});
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
