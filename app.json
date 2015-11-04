@@ -1,7 +1,7 @@
 {
   "name": "CIS-395 Music MMO",
   "description": "A musical massively multiplayer online game",
-  "repository": "https://scott7m@bitbucket.org/scott7m/cis-395-music-mmo.git",
+  "repository": "https://github.com/fahads/yoshi.git",
   "logo": "",
   "keywords": ["node", "express", "static"],
   "image": "heroku/nodejs"
