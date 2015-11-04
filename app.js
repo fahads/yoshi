@@ -5,14 +5,29 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var mongo = require('mongodb').MongoClient, assert = require('assert');
+var mongo = require('mongodb').MongoClient, assert = require('assert')
 var uri = 'mongodb://damp-depths:damp-depths@ds045714.mongolab.com:45714/heroku_6l2wbtts';
 
 mongo.connect(uri, function(err, db) {
   assert.equal(null, err);
   console.log("Connected to db.");
-  db.close();
+  insertDocuments(db, function() {
+    db.close();
+  })
 })
+
+var insertDocuments = function(db, callback) {
+  var collection = db.collection('documents');
+  collection.insertMany([
+    {a: 1}, {a: 2}, {a: 3}
+    ], function(err, result) {
+      assert.equal(err, null);
+      assert.equal(3, result.result.n);
+      assert.equal(3, result.ops.length);
+      console.log("Inserted 3 documents into the document collection");
+      callback(result);
+  });
+}
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
