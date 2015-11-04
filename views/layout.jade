@@ -2,6 +2,29 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+  block content
   body
-    block content
+    .row
+      nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#collapse')
+            span.sr-only Toggle navigation
+            span.glyphicon.glyphicon-arrow-down
+            |                   MENU
+        #collapse.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a.active(href='#') Start
+            li
+              a(href='#') Arena
+            li
+              a(href='#') My Profile
+            li
+              a(href='#') My Dashboard
+            li
+              a(href='#') My Groups
+            li
+              a(href='#') About
+    
