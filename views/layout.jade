@@ -4,7 +4,6 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/custom.css')
-  block content
   body
     .row
       nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
@@ -27,4 +26,11 @@ html
               a(href='#') My Groups
             li
               a(href='#') About
-    
+    block content
+    block foot
+      footer.music-footer
+        .row
+          div
+            img(src='images/MusicFooterSmTransparent.png')
+      script(src='http://code.jquery.com/jquery-latest.min.js')
+      script(src='javascripts/bootstrap.min.js')
