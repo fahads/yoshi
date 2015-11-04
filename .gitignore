@@ -38,6 +38,9 @@ $RECYCLE.BIN/
 .Spotlight-V100
 .Trashes
 
+#npm log file
+npm-debug.log
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
