@@ -8,7 +8,9 @@ router.get('/', function(req, res, next) {
 
 // new session route and render
 router.get('/new-session', function(req, res) {
-	res.render('new-session', { title: "New Jam Session "});
+	res.render('new-session', { 
+		title: "New Jam Session ",
+    sessionname: req.cookies.sessionName});
 });
 
 // post request to create new session from form
@@ -28,6 +30,8 @@ router.post('/create-session', function(req, res) {
 			res.send("Error cannot add data to db.");
 		} else {
 			res.cookie('session', doc._id);
+			res.cookie('instrument', instrument);
+      res.cookie('sessionName', jamname);
 			res.redirect("new-session");
 		}
 	})
