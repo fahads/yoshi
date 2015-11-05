@@ -3,3 +3,45 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  .row
+    // LEFT COLUMN
+    .col-lg-3.col-md-3.col-sm-3
+      // Session Information: Session Name, URL, Invite Participants and Participant Names
+      h3 Session Information
+      div
+        form(action='')
+          input.btn.btn-info(type='button', value='Invite a Friend')
+        h5 Session URL
+        #sessionURL
+          br
+          br
+        h5= sessionname
+        #sessionName
+          br
+          br
+        h5 Participants
+        #sessionParticipants
+          br
+      br
+      // CENTER COLUMN
+    .col-lg-6.col-md-6.col-sm-6
+      .session-logo
+        .this-session-logo
+          img(src='images/MusicBirdLrgLightGold.png', alt='Musicador Logo', width='200')
+      // Placeholder for user instructions      
+      // RIGHT COLUMN
+    .col-lg-3.col-md-3.col-sm-3
+      // Session Controls: Leave Session, End Session
+      div(style='text-align: right;')
+        h3 Session Controls
+        form(action='')
+          input#leaveSession.btn.btn-info(type='button', value='Leave Session')
+          input#endSession.btn.btn-info(type='button', value='End Session')
+    // ROW 3 TEMPORARY DISPLAY FOR KEYBOARD
+  .row
+    div(style='text-align: center;')
+      img(src='images/MusicKeyboard.png', alt='Keyboard')
+      br
+      br
+      br
+      br
