@@ -14,7 +14,7 @@ router.get('/new-session', function(req, res) {
 // post request to create new session from form
 router.post('/create-session', function(req, res) {
 	var db = req.db;
-	// var instrument = req.body.instrument;
+	var instrument = req.body.instrument;
 	var username = req.body.username;
 	var jamname = req.body.jamname;
 	var session = db.get('sessions');
@@ -22,7 +22,7 @@ router.post('/create-session', function(req, res) {
 	session.insert({
 		"username" : username,
 		"jam" : jamname,
-		// "instrument" : instrument
+		"instrument" : instrument
 	}, function(err, doc) {
 		if (err) {
 			res.send("Error cannot add data to db.");
