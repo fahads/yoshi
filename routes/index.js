@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 // new session route and render
 router.get('/new-session', function(req, res) {
 	res.render('new-session', { 
-		title: "New Jam Session ",
+		title: "New Jam Session",
     sessionname: req.cookies.sessionName});
 });
 
