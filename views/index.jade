@@ -15,7 +15,7 @@ block content
         .this-titlebar
           p Get Ready to Jam!
         h4 How to create a session
-        form(action='')
+        form(name='createsession',method='post',action='/create-session')
           .form-group
             label(for='selectInstrument') Step 1: Your Instrument
             select#selectInstrument.form-control(autofocus='', size='5', required='')
@@ -29,13 +29,14 @@ block content
               option(value='clarinet') Clarinet
           .form-group
             label(for='inputName') Step 2: Your Name
-            input#inputName.form-control(type='text', placeholder='Enter your stage name.', required='')
+            input#inputName.form-control(type='text', placeholder='Enter your stage name.', required='', name='username')
           .form-group
             label(for='inputSession') Step 3: Your Session Name
-            input#inputSession.form-control(type='text', placeholder='Give your jam session a name.', required='')
+            input#inputSession.form-control(type='text', placeholder='Give your jam session a name.', required='', name='jamname')
           .form-group
             label(for='createSession') Step 4: Create the Session!
             input#createSession.form-control.btn.btn-info(value='Create Session', type='button', placeholder='Create Session', required='')
+            button#btnSubmit(type="submit") submit
         div
           // Placeholder for user instructions
           p
