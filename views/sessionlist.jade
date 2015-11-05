@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Session List
+  ul
+    each session, i in sessionlist
+      li
+        =session.jam
+        =session.username
+        =session._id
