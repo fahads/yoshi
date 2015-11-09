@@ -14,6 +14,25 @@ var users = require('./routes/users');
 
 var app = express();
 
+var server = require('http').createServer(app)
+
+// Create WS server
+var io = require('socket.io').listen(server);
+
+// Adding support for Socket.IO on Heroku
+io.configure(function () { 
+  io.set("transports", ["xhr-polling"]); 
+  io.set("polling duration", 10); 
+});
+
+// When a new client connects
+io.sockets.on('connection', function (socket) {
+  // Pass on the piano key as a broadcast
+  socket.on('note', function (data) {
+    socket.broadcast.emit('note', data);
+  });
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
