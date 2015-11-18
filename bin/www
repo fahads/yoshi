@@ -104,6 +104,3 @@ io.sockets.on('connection', function (socket) {
     socket.broadcast.emit('note', data);
   });
 });
-
-// Start server and listen on port 8080 if not env defined.
-// server.listen(process.env.PORT || port);
