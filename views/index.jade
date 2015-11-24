@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  .row
+    .col-sm-12
+      h1= title
+      p Welcome to #{title}
+  .row(style='overflow:auto;')
+      .col-lg-3.col-md-3.col-sm-1
+        // TBD My Invitations Sessions and Groups
+      // PRIMARY FUNCTIONALITY CENTER COLUMN
+      .col-lg-6.col-md-6.col-sm-10
+        .this-logo
+          img(src='images/logoblack400w.png', alt='Musicador logo: a bird made of musical notes spreading its wings')
+        .this-titlebar
+          p Get Ready to Jam!
+        h4 How to create a session
+        form(name='createsession',method='post',action='/create-session')
+          .form-group
+            label(for='selectInstrument') Step 1: Your Instrument
+            select#selectInstrument.form-control(autofocus='', size='5', required='', name='instrument')
+              option(value='piano') Piano
+              option(value='electricpiano') Electric Piano
+              option(value='guitar') Guitar
+              option(value='bassguitar') Bass Guitar
+              option(value='dulcimerorgan') Dulcimer Organ
+              option(value='violin') Violin
+              option(value='viola') Viola
+              option(value='clarinet') Clarinet
+          .form-group
+            label(for='inputName') Step 2: Your Name
+            input#inputName.form-control(type='text', placeholder='Enter your stage name.', required='', name='username')
+          .form-group
+            label(for='inputSession') Step 3: Your Session Name
+            input#inputSession.form-control(type='text', placeholder='Give your jam session a name.', required='', name='jamname')
+          .form-group
+            label(for='createSession') Step 4: Create the Session!
+            input#createSession.form-control.btn.btn-info(value='Create Session', type='submit', placeholder='Create Session', required='')
+        div
+          // Placeholder for user instructions
+          p
+            br
+            br
+            br
+            br
+            br
+      .col-lg-3.col-md-3.col-sm-1
+        // TBD Pods Dashboard, Profile, etc.

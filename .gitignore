@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+.DS_Store
+=======
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -35,9 +38,13 @@ $RECYCLE.BIN/
 .Spotlight-V100
 .Trashes
 
+#npm log file
+npm-debug.log
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
 Network Trash Folder
 Temporary Items
 .apdisk
+>>>>>>> 2b9405fe1e20c15b68384659da31dfdabaa60f99
