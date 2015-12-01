@@ -91,7 +91,7 @@ function onListening() {
 
 var io = require('socket.io').listen(server);
 
-// Adding support for Socket.IO on Heroku
+// Adding support for Socket.IO
 io.configure(function () { 
   io.set("transports", ["xhr-polling"]); 
   io.set("polling duration", 10); 
