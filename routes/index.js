@@ -10,7 +10,8 @@ router.get('/', function(req, res, next) {
 router.get('/new-session', function(req, res) {
 	res.render('new-session', { 
 		title: "New Jam Session",
-    sessionname: req.cookies.sessionName});
+    sessionname: req.cookies.sessionName,
+	sessinstrument: req.cookies.instrument});
 });
 
 // post request to create new session from form
