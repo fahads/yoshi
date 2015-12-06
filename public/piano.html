@@ -7,167 +7,76 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <div id="p-wrapper">
+    <ul id="piano">
+      <li><div class="anchor clickable" data-note="A2" onclick="playNote(this.getAttribute('data-note'));"></div></li>
+      <li>
+        <div class="anchor clickable" data-note="B2" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Bb2" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li><div class="anchor clickable" data-note="C3" onclick="playNote(this.getAttribute('data-note'));"></div></li>
+      <li>
+        <div class="anchor clickable" data-note="D3" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Db3" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li>
+        <div class="anchor clickable" data-note="E3" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Eb3" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li><div class="anchor clickable" data-note="F3" onclick="playNote(this.getAttribute('data-note'));"></div></li>
+      <li><div class="anchor clickable" data-note="G3" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Gb3" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li>
+        <div class="anchor clickable" data-note="A3" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Ab3" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li><div class="anchor clickable" data-note="B3" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Bb3" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li><div class="anchor clickable" data-note="C4" onclick="playNote(this.getAttribute('data-note'));"></div></li>
+      <li>
+        <div class="anchor clickable" data-note="D4" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Db4" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li>
+        <div class="anchor clickable" data-note="E4" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Eb4" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li><div class="anchor clickable" data-note="F4" onclick="playNote(this.getAttribute('data-note'));"></div></li>
+      <li>
+        <div class="anchor clickable" data-note="G4" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Gb4" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li>
+        <div class="anchor clickable" data-note="A4" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Ab4" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <li>
+        <div class="anchor clickable" data-note="B4" onclick="playNote(this.getAttribute('data-note'));"></div>
+        <span class="clickable" data-note="Bb4" onclick="playNote(this.getAttribute('data-note'));"></span>
+      </li>
+      <!-- <li><div class="anchor clickable" data-note="C5"></div></li> -->
+    </ul>
+  </div>
 
-  <audio id="sound-A2"  preload="auto">
-    <source type="audio/mpeg" src="samples/A2.m4a">
-    <source type="audio/ogg"  src="samples/A2.ogg">
-  </audio>
-  <audio id="sound-Bb2" preload="auto">
-    <source type="audio/mpeg" src="samples/Bb2.m4a">
-    <source type="audio/ogg"  src="samples/Bb2.ogg">
-  </audio>
-  <audio id="sound-B2"  preload="auto">
-    <source type="audio/mpeg" src="samples/B2.m4a">
-    <source type="audio/ogg"  src="samples/B2.ogg">
-  </audio>
-  <audio id="sound-Ab3" preload="auto">
-    <source type="audio/mpeg" src="samples/Ab3.m4a">
-    <source type="audio/ogg"  src="samples/Ab3.ogg">
-  </audio>
-  <audio id="sound-A3"  preload="auto">
-    <source type="audio/mpeg" src="samples/A3.m4a">
-    <source type="audio/ogg"  src="samples/A3.ogg">
-  </audio>
-  <audio id="sound-Bb3" preload="auto">
-    <source type="audio/mpeg" src="samples/Bb3.m4a">
-    <source type="audio/ogg"  src="samples/Bb3.ogg">
-  </audio>
-  <audio id="sound-B3"  preload="auto">
-    <source type="audio/mpeg" src="samples/B3.m4a">
-    <source type="audio/ogg"  src="samples/B3.ogg">
-  </audio>
-  <audio id="sound-C3"  preload="auto">
-    <source type="audio/mpeg" src="samples/C3.m4a">
-    <source type="audio/ogg"  src="samples/C3.ogg">
-  </audio>
-  <audio id="sound-Db3" preload="auto">
-    <source type="audio/mpeg" src="samples/Db3.m4a">
-    <source type="audio/ogg"  src="samples/Db3.ogg">
-  </audio>
-  <audio id="sound-D3"  preload="auto">
-    <source type="audio/mpeg" src="samples/D3.m4a">
-    <source type="audio/ogg"  src="samples/D3.ogg">
-  </audio>
-  <audio id="sound-Eb3" preload="auto">
-    <source type="audio/mpeg" src="samples/Eb3.m4a">
-    <source type="audio/ogg"  src="samples/Eb3.ogg">
-  </audio>
-  <audio id="sound-E3"  preload="auto">
-    <source type="audio/mpeg" src="samples/E3.m4a">
-    <source type="audio/ogg"  src="samples/E3.ogg">
-  </audio>
-  <audio id="sound-F3"  preload="auto">
-    <source type="audio/mpeg" src="samples/F3.m4a">
-    <source type="audio/ogg"  src="samples/F3.ogg">
-  </audio>
-  <audio id="sound-Gb3" preload="auto">
-    <source type="audio/mpeg" src="samples/Gb3.m4a">
-    <source type="audio/ogg"  src="samples/Gb3.ogg">
-  </audio>
-  <audio id="sound-G3"  preload="auto">
-    <source type="audio/mpeg" src="samples/G3.m4a">
-    <source type="audio/ogg"  src="samples/G3.ogg">
-  </audio>
-  <audio id="sound-Ab4" preload="auto">
-    <source type="audio/mpeg" src="samples/Ab4.m4a">
-    <source type="audio/ogg"  src="samples/Ab4.ogg">
-  </audio>
-  <audio id="sound-A4"  preload="auto">
-    <source type="audio/mpeg" src="samples/A4.m4a">
-    <source type="audio/ogg"  src="samples/A4.ogg">
-  </audio>
-  <audio id="sound-Bb4" preload="auto">
-    <source type="audio/mpeg" src="samples/Bb4.m4a">
-    <source type="audio/ogg"  src="samples/Bb4.ogg">
-  </audio>
-  <audio id="sound-B4"  preload="auto">
-    <source type="audio/mpeg" src="samples/B4.m4a">
-    <source type="audio/ogg"  src="samples/B4.ogg">
-  </audio>
-  <audio id="sound-C4"  preload="auto">
-    <source type="audio/mpeg" src="samples/C4.m4a">
-    <source type="audio/ogg"  src="samples/C4.ogg">
-  </audio>
-  <audio id="sound-Db4" preload="auto">
-    <source type="audio/mpeg" src="samples/Db4.m4a">
-    <source type="audio/ogg"  src="samples/Db4.ogg">
-  </audio>
-  <audio id="sound-D4"  preload="auto">
-    <source type="audio/mpeg" src="samples/D4.m4a">
-    <source type="audio/ogg"  src="samples/D4.ogg">
-  </audio>
-  <audio id="sound-Eb4" preload="auto">
-    <source type="audio/mpeg" src="samples/Eb4.m4a">
-    <source type="audio/ogg"  src="samples/Eb4.ogg">
-  </audio>
-  <audio id="sound-E4"  preload="auto">
-    <source type="audio/mpeg" src="samples/E4.m4a">
-    <source type="audio/ogg"  src="samples/E4.ogg">
-  </audio>
-  <audio id="sound-F4"  preload="auto">
-    <source type="audio/mpeg" src="samples/F4.m4a">
-    <source type="audio/ogg"  src="samples/F4.ogg">
-  </audio>
-  <audio id="sound-Gb4" preload="auto">
-    <source type="audio/mpeg" src="samples/Gb4.m4a">
-    <source type="audio/ogg"  src="samples/Gb4.ogg">
-  </audio>
-  <audio id="sound-G4"  preload="auto">
-    <source type="audio/mpeg" src="samples/G4.m4a">
-    <source type="audio/ogg"  src="samples/G4.ogg">
-  </audio>
-<!--   <audio id="sound-C5"  preload="auto">
-    <source type="audio/mpeg" src="samples/C5.m4a">
-    <source type="audio/ogg"  src="samples/C5.ogg">
-  </audio> -->
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.6.8/Bacon.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="javascripts/soundfont-loader.min.js"></script>
+  <script>
+    var ctx = new AudioContext();
+    var piano = null;
+    var note = "C4"
+    var time = ctx.currentTime
+    soundfont(ctx, 'acoustic_grand_piano').then(function(instrument) {
+      piano = instrument;
+    });
 
-<!-- <header>
-    <h1>Demo: Making a Collaborative Piano Using Functional Reactive Programming (FRP)</h1>
-    <p>This is a demo for a <a href="http://open.bekk.no/#!making-a-collaborative-piano-using-functional-reactive-programming-frp">blog post on doing simple functional reactive programming</a>.</p>
-    <p>This example and the blog post can be found <a href="https://github.com/mikaelbr/frp-piano">on Github</a></p>.
-</header> -->
+    function playNote(note) {
+      piano.play(note, time);
+    }
+  </script>
 
-<div id="p-wrapper">
-  <ul id="piano">
-    <li><div class="anchor clickable" data-note="A2"></div></li>
-    <li><div class="anchor clickable" data-note="B2"></div><span class="clickable" data-note="Bb2"></span></li>
-    <li><div class="anchor clickable" data-note="C3"></div></li>
-    <li><div class="anchor clickable" data-note="D3"></div><span class="clickable" data-note="Db3"></span></li>
-    <li><div class="anchor clickable" data-note="E3"></div><span class="clickable" data-note="Eb3"></span></li>
-    <li><div class="anchor clickable" data-note="F3"></div></li>
-    <li><div class="anchor clickable" data-note="G3"></div><span class="clickable" data-note="Gb3"></span></li>
-    <li><div class="anchor clickable" data-note="A3"></div><span class="clickable" data-note="Ab3"></span></li>
-    <li><div class="anchor clickable" data-note="B3"></div><span class="clickable" data-note="Bb3"></span></li>
-    <li><div class="anchor clickable" data-note="C4"></div></li>
-    <li><div class="anchor clickable" data-note="D4"></div><span class="clickable" data-note="Db4"></span></li>
-    <li><div class="anchor clickable" data-note="E4"></div><span class="clickable" data-note="Eb4"></span></li>
-    <li><div class="anchor clickable" data-note="F4"></div></li>
-    <li><div class="anchor clickable" data-note="G4"></div><span class="clickable" data-note="Gb4"></span></li>
-    <li><div class="anchor clickable" data-note="A4"></div><span class="clickable" data-note="Ab4"></span></li>
-    <li><div class="anchor clickable" data-note="B4"></div><span class="clickable" data-note="Bb4"></span></li>
-    <!-- <li><div class="anchor clickable" data-note="C5"></div></li> -->
-  </ul>
-</div>
-
-<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.6.8/Bacon.min.js"></script>
-<script src="/socket.io/socket.io.js"></script>
-<script src="/player.coffee" type="text/coffeescript"></script>
-<script src="/piano.coffee" type="text/coffeescript"></script>
-
-<!--
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-44283533-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script> -->
 </body>
 </html>
