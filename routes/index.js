@@ -31,7 +31,7 @@ router.post('/create-session', function(req, res) {
 		} else {
 			res.cookie('session', doc._id);
 			res.cookie('instrument', instrument);
-      res.cookie('sessionName', jamname);
+      		res.cookie('sessionName', jamname);
 			res.redirect("new-session");
 		}
 	})
