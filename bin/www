@@ -89,18 +89,12 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
+// Adding support for Socket.IO
+
 var io = require('socket.io').listen(server);
 
-// Adding support for Socket.IO
-io.configure(function () { 
-  io.set("transports", ["xhr-polling"]); 
-  io.set("polling duration", 10); 
-});
-
-// When a new client connects
-io.sockets.on('connection', function (socket) {
-  // Pass on the piano key as a broadcast
-  socket.on('note', function (data) {
-    socket.broadcast.emit('note', data);
+io.on('connection', function(socket){
+  socket.on('played note', function(note) {
+    io.emit('played note', note);
   });
 });
