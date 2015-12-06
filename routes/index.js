@@ -34,8 +34,8 @@ router.post('/create-session', function(req, res) {
       		res.cookie('sessionName', jamname);
 			res.redirect("new-session");
 		}
-	})
-})
+	});
+});
 
 // view that shows list of sessions
 router.get('/sessionlist', function(req, res) {
