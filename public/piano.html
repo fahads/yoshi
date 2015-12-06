@@ -64,19 +64,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.6.8/Bacon.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="javascripts/soundfont-loader.min.js"></script>
-  <script>
-    var ctx = new AudioContext();
-    var piano = null;
-    var note = "C4"
-    var time = ctx.currentTime
-    soundfont(ctx, 'acoustic_grand_piano').then(function(instrument) {
-      piano = instrument;
-    });
-
-    function playNote(note) {
-      piano.play(note, time);
-    }
-  </script>
+  <script src="javascripts/musicador.js"></script>
 
 </body>
 </html>
