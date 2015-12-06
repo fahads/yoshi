@@ -91,16 +91,24 @@ function onListening() {
 
 var io = require('socket.io').listen(server);
 
-// Adding support for Socket.IO
-io.configure(function () { 
-  io.set("transports", ["xhr-polling"]); 
-  io.set("polling duration", 10); 
+io.on('connection', function(socket){
+  console.log('a user connected');
 });
 
-// When a new client connects
-io.sockets.on('connection', function (socket) {
-  // Pass on the piano key as a broadcast
-  socket.on('note', function (data) {
-    socket.broadcast.emit('note', data);
-  });
-});
+// // Adding support for Socket.IO
+// io.on('connection', function(socket){
+//   console.log('a user connected');
+// });
+
+// io.configure(function () { 
+//   io.set("transports", ["xhr-polling"]); 
+//   io.set("polling duration", 10); 
+// });
+
+// // When a new client connects
+// io.sockets.on('connection', function (socket) {
+//   // Pass on the piano key as a broadcast
+//   socket.on('note', function (data) {
+//     socket.broadcast.emit('note', data);
+//   });
+// });
