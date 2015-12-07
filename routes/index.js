@@ -1,16 +1,50 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET home page and show list of sessions */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Musicador' });
+  var db = req.db;
+    var collection = db.get('sessions');
+    collection.find({},{},function(e,docs){
+        res.render('index', {
+            title: 'Musicador',
+            sessionList : docs
+        });
+    });
+});
+
+router.post('/join-session', function(req, res) {
+  var db = req.db, 
+    sessionId = req.body.joinSessionId, sessionpw = req.body.existingJamPW, stageName = req.body.username, instrument = req.body.instrument;
+  var activeSessions = db.get('activesessions');
+  var sessions = db.get('sessions');
+  console.log(sessionId);
+  function testPass(doc) {
+    if (doc['password'] === sessionpw) {
+      //add user and instrument to active session
+      var queryString = '\"' + sessionId + '\"';
+      activeSessions.update({sessionid: queryString}, {$push: {users: [stageName, instrument]}}, function(err) {
+        console.log("The error is: " + err);
+      });
+      res.cookie('session', sessionId);
+      res.cookie('instrument', instrument);
+      res.cookie('sessionName', doc['jam']);
+      res.redirect("new-session");
+    } else {
+      console.log("invalid password");
+    }
+  }
+  sessions.findById(sessionId, function (err, docs) {
+    testPass(docs);
+  });
 });
 
 // new session route and render
 router.get('/new-session', function(req, res) {
 	res.render('new-session', { 
-		title: "New Jam Session",
-    sessionname: req.cookies.sessionName});
+		title: "Jam Session",
+    sessionname: req.cookies.sessionName,
+    sessinstrument: req.cookies.instrument}); //Scott's code
 });
 
 // post request to create new session from form
@@ -19,19 +53,33 @@ router.post('/create-session', function(req, res) {
 	var instrument = req.body.instrument;
 	var username = req.body.username;
 	var jamname = req.body.jamname;
+  var password = req.body.jampassword;
 	var session = db.get('sessions');
+  var activeSessions = db.get('activesessions');
 
-	session.insert({
-		"username" : username,
-		"jam" : jamname,
-		"instrument" : instrument
-	}, function(err, doc) {
+  function createActiveSession(id){
+    activeSessions.insert({
+      "sessionid" : id,
+      "users" : [[username, instrument]]
+    });
+  }
+
+  var data = {
+    "username" : username,
+    "jam" : jamname,
+    "instrument" : instrument,
+    "password" : password
+  };
+
+	session.insert(data, function(err, doc) {
 		if (err) {
 			res.send("Error cannot add data to db.");
 		} else {
+      console.log(JSON.stringify(doc._id));
+      createActiveSession(JSON.stringify(doc._id));
 			res.cookie('session', doc._id);
 			res.cookie('instrument', instrument);
-      		res.cookie('sessionName', jamname);
+      res.cookie('sessionName', jamname);
 			res.redirect("new-session");
 		}
 	});

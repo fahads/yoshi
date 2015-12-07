@@ -1,7 +1,8 @@
 var ctx = new AudioContext();
 var piano = null;
 var time = ctx.currentTime
-soundfont(ctx, 'acoustic_grand_piano').then(function(instrument) {
+soundfont(ctx, sessinstrument.innerText).then(function(instrument) {
+  //from Scott
   piano = instrument;
 });
 

@@ -1,10 +1,28 @@
 extends layout
 
 block content
-  h1 Session List
-  ul
-    each session, i in sessionlist
-      li
-        =session.jam
-        =session.username
-        =session._id
+  .row
+    .col-sm-6
+      form(name='joinSession', method='post', action='/join-session')
+        .form-group
+          label(for='selectSession') Join a session
+          select#selectSession.form-control(autofocus='', size='3', required='', name='joinSessionId')
+            each session, i in sessionlist
+              option(value='#{session._id}') #{session.jam}
+        .form-group
+            label(for='selectInstrument') Select Your Instrument
+            select#selectInstrument.form-control(autofocus='', size='5', required='', name='instrument')
+              option(value='acoustic_grand_piano') Piano
+              option(value='electric_piano_1') Electric Piano
+              option(value='electric_guitar_clean') Guitar
+              option(value='acoustic_bass') Bass Guitar
+              option(value='dulcimer') Dulcimer
+              option(value='violin') Violin
+              option(value='viola') Viola
+              option(value='clarinet') Clarinet
+        .form-group
+            input#inputName.form-control(type='text', placeholder='Enter your stage name', required='', name='username')
+        .form-group
+            input#joinSessionPassword.form-control(type='password', placeholder='Enter the session password', required='', name='existingJamPW')
+        .form-group
+            input#joinSession.form-control.btn.btn-info(value='Join Session!', type='submit', required='')

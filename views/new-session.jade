@@ -6,15 +6,8 @@ block content
   .row
     // LEFT COLUMN
     .col-lg-3.col-md-3.col-sm-3
-      // Session Information: Session Name, URL, Invite Participants and Participant Names
       h3 Session Information
       div
-        form(action='')
-          input.btn.btn-info(type='button', value='Invite a Friend')
-        h5 Session URL
-        #sessionURL
-          br
-          br
         h5= sessionname
         #sessionName
           br
@@ -22,6 +15,8 @@ block content
         h5 Participants
         #sessionParticipants
           br
+        h4 Instrument
+        #sessinstrument= sessinstrument
       br
       // CENTER COLUMN
     .col-lg-6.col-md-6.col-sm-6

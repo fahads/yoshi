@@ -2,7 +2,7 @@ extends layout
 
 block content
   .row
-    .col-sm-12
+    .col-sm-3
       h1= title
       p Welcome to #{title}
   .row(style='overflow:auto;')
@@ -34,7 +34,10 @@ block content
             label(for='inputSession') Step 3: Your Session Name
             input#inputSession.form-control(type='text', placeholder='Give your jam session a name.', required='', name='jamname')
           .form-group
-            label(for='createSession') Step 4: Create the Session!
+            label(for='sessionPassword') Step 4: Your Session Password
+            input#sessionPassword.form-control(type='password', placeholder='Give your jam session a password.', required='', name='jampassword')
+          .form-group
+            label(for='createSession') Step 5: Create the Session!
             input#createSession.form-control.btn.btn-info(value='Create Session', type='submit', placeholder='Create Session', required='')
         div
           // Placeholder for user instructions
