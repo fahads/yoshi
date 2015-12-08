@@ -8,12 +8,13 @@ block content
     .col-lg-3.col-md-3.col-sm-3
       h3 Session Information
       div
+        h4 Participants
+        ul
+          each user in sessusers
+            li= user[0] + ' is playing the ' + user[1]
         h5= sessionname
         #sessionName
           br
-          br
-        h5 Participants
-        #sessionParticipants
           br
         h4 Instrument
         #sessinstrument= sessinstrument

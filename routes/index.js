@@ -18,13 +18,12 @@ router.post('/join-session', function(req, res) {
     sessionId = req.body.joinSessionId, sessionpw = req.body.existingJamPW, stageName = req.body.username, instrument = req.body.instrument;
   var activeSessions = db.get('activesessions');
   var sessions = db.get('sessions');
-  console.log(sessionId);
   function testPass(doc) {
     if (doc['password'] === sessionpw) {
       //add user and instrument to active session
       var queryString = '\"' + sessionId + '\"';
       activeSessions.update({sessionid: queryString}, {$push: {users: [stageName, instrument]}}, function(err) {
-        console.log("The error is: " + err);
+        if (err) {console.log("The error is: " + err);}
       });
       res.cookie('session', sessionId);
       res.cookie('instrument', instrument);
@@ -41,10 +40,23 @@ router.post('/join-session', function(req, res) {
 
 // new session route and render
 router.get('/new-session', function(req, res) {
-	res.render('new-session', { 
-		title: "Jam Session",
-    sessionname: req.cookies.sessionName,
-    sessinstrument: req.cookies.instrument}); //Scott's code
+  var db = req.db
+  var sessionId = req.cookies.session;
+  var queryString = '\"' + sessionId + '\"';
+  var activeSessions = db.get('activesessions');
+
+  function renderPage(userdoc) {
+    console.log(userdoc);
+    res.render('new-session', {
+      title: "Jam Session",
+      sessionname: req.cookies.sessionName,
+      sessinstrument: req.cookies.instrument,
+      sessusers: userdoc
+    });
+  }  
+  activeSessions.find({sessionid: queryString}, function (err, docs) {
+    renderPage(docs['0']['users']);
+  });
 });
 
 // post request to create new session from form
