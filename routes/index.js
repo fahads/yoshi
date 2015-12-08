@@ -55,7 +55,11 @@ router.get('/new-session', function(req, res) {
     });
   }  
   activeSessions.find({sessionid: queryString}, function (err, docs) {
-    renderPage(docs['0']['users']);
+    if (docs['0']) {
+      renderPage(docs['0']['users']);
+    } else {
+      res.send("Error, no sessions exist.");
+    }
   });
 });
 
