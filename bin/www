@@ -94,7 +94,7 @@ function onListening() {
 var io = require('socket.io').listen(server);
 
 io.on('connection', function(socket){
-  socket.on('played note', function(note) {
-    io.emit('played note', note);
+  socket.on('played note', function(noteAndInstrument) {
+    io.emit('played note', noteAndInstrument);
   });
 });
