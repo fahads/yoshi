@@ -8,35 +8,22 @@ block content
     .col-lg-3.col-md-3.col-sm-3
       h3 Session Information
       div
-        h4 Participants
-        ul
-          each user in sessusers
-            li= user[0] + ' is playing the ' + user[1]
         h4= sessionname
         h4 Instrument
         #sessinstrument= sessinstrument
-        #sessionid= sessionid
       br
       // CENTER COLUMN
-    .col-lg-6.col-md-6.col-sm-6
+    .col-lg-3.col-md-3.col-sm-3
       .session-logo
         .this-session-logo
           img(src='images/MusicBirdLrgLightGold.png', alt='Musicador Logo', width='200')
-      // Placeholder for user instructions      
       // RIGHT COLUMN
-    .col-lg-3.col-md-3.col-sm-3
-      // Session Controls: Leave Session, End Session
-      div(style='text-align: right;')
-        h3 Session Controls
-        form(action='')
-          input#leaveSession.btn.btn-info(type='button', value='Leave Session')
-          input#endSession.btn.btn-info(type='button', value='End Session')
-    // ROW 3 TEMPORARY DISPLAY FOR KEYBOARD
+    .col-lg-6.col-md-6.col-sm-6
+      h4 Participants
+      ul
+        each user in sessusers
+          li= user[0] + ' is playing the ' + user[1]
   .row
     div(style='text-align: center;')
       // img(src='images/MusicKeyboard.png', alt='Keyboard')
       include ../public/piano.html
-      br
-      br
-      br
-      br

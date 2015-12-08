@@ -51,7 +51,6 @@ router.get('/new-session', function(req, res) {
       title: "Jam Session",
       sessionname: req.cookies.sessionName,
       sessinstrument: req.cookies.instrument,
-      sessionid: sessionId,
       sessusers: userdoc
     });
   }  
